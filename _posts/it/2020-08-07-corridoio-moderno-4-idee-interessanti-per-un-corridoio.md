@@ -27,7 +27,7 @@ Ci sono molte soluzioni intelligenti che vi permetteranno di avere tutti questi 
 
 {% fig %}
 
-![Come decorare un piccolo corridoio?](/uploads/maly-przedpokoj.jpg "Come decorare un piccolo corridoio?")
+![Come decorare un piccolo corridoio?](/uploads/nowoczesny-przedpokoj.jpg "Come decorare un piccolo corridoio?")
 
 {% endfig %}
 
@@ -43,7 +43,7 @@ Ci sono degli angolini nel tuo corridoio? Possono aiutarvi ad aumentare la funzi
 
 {% fig %}
 
-![Sistema di stoccaggio in un piccolo corridoio](/uploads/duzy-bialy-nowoczesny-przedpokoj.jpg "Sistema di stoccaggio in un piccolo corridoio")
+![Sistema di stoccaggio in un piccolo corridoio](/uploads/nowoczesny-przedpokoj.jpg "Sistema di stoccaggio in un piccolo corridoio")
 
 {% endfig %}
 
@@ -55,13 +55,13 @@ Una buona idea per un arredamento moderno del corridoio è **appendere alla pare
 
 {% fig %}
 
-![Corridoio lungo e stretto - idee di arredamento](/uploads/obrazy-na-scianie.jpg "Corridoio lungo e stretto - idee di arredamento")
+![Corridoio lungo e stretto - idee di arredamento](/uploads/nowoczesny-przedpokoj.jpg "Corridoio lungo e stretto - idee di arredamento")
 
 {% endfig %}
 
 {% fig %}
 
-![Idee per i corridoi - immagini](/uploads/nowoczesny-przedpokoj-obrazy.jpg "Idee per i corridoi - immagini")
+![Idee per i corridoi - immagini](/uploads/nowoczesny-przedpokoj.jpg "Idee per i corridoi - immagini")
 
 {% endfig %}
 
@@ -73,13 +73,13 @@ Al posto dei poster o dei quadri in cornici ornamentali, si possono usare gli sp
 
 {% fig %}
 
-![Arredamento del corridoio - specchio](/uploads/lustra-na-scianie.jpg "Arredamento del corridoio - specchio")
+![Arredamento del corridoio - specchio](/uploads/nowoczesny-przedpokoj.jpg "Arredamento del corridoio - specchio")
 
 {% endfig %}
 
 {% fig %}
 
-![Arredamento del corridoio - specchi](/uploads/rozne-lustra-na-scianie.jpg "Arredamento del corridoio - specchi")
+![Arredamento del corridoio - specchi](/uploads/nowoczesny-przedpokoj.jpg "Arredamento del corridoio - specchi")
 
 {% endfig %}
 
@@ -87,7 +87,7 @@ Al posto dei poster o dei quadri in cornici ornamentali, si possono usare gli sp
 
 {% fig %}
 
-![Idee per l'arredamento del corridoio - scaffale](/uploads/polki-z-kwiatami-przedpokoj.jpg "Idee per l'arredamento del corridoio - scaffale")
+![Idee per l'arredamento del corridoio - scaffale](/uploads/nowoczesny-przedpokoj.jpg "Idee per l'arredamento del corridoio - scaffale")
 
 {% endfig %}
 
@@ -99,7 +99,7 @@ Gli interni delle abitazioni utilizzano tipicamente lo stampaggio in polistirolo
 
 {% fig %}
 
-![Modanature sui muri dei corridoi? Una grande idea!](/uploads/sztukateria-na-scianie-korytarz.jpg "Modanature sui muri dei corridoi? Una grande idea!")
+![Modanature sui muri dei corridoi? Una grande idea!](/uploads/nowoczesny-przedpokoj.jpg "Modanature sui muri dei corridoi? Una grande idea!")
 
 {% endfig %}
 
@@ -111,7 +111,7 @@ Un corridoio moderno è il risultato della vostra creatività - in modo da poter
 
 {% fig %}
 
-![Decorazione murale](/uploads/sztukateria-na-scianie-przedpokoj.jpg "Decorazione murale")
+![Decorazione murale](/uploads/nowoczesny-przedpokoj.jpg "Decorazione murale")
 
 {% endfig %}
 
@@ -121,7 +121,7 @@ Possiedi un corridoio molto ampio? Vi siete occupati di tutti gli elementi di ba
 
 {% fig %}
 
-![Carta da parati fotografica personalizzata nel corridoio](/uploads/nowoczesny-przedpokoj-fototapeta.jpg "Carta da parati fotografica personalizzata nel corridoio")
+![Carta da parati fotografica personalizzata nel corridoio](/uploads/nowoczesny-przedpokoj.jpg "Carta da parati fotografica personalizzata nel corridoio")
 
 {% endfig %}
 

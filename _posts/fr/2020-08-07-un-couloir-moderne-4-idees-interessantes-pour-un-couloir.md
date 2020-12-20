@@ -27,7 +27,7 @@ Il existe de nombreuses solutions astucieuses qui vous permettront d'avoir tous 
 
 {% fig %}
 
-![Comment décorer un petit couloir ?](/uploads/maly-przedpokoj.jpg "Comment décorer un petit couloir ?")
+![Comment décorer un petit couloir ?](/uploads/nowoczesny-przedpokoj.jpg "Comment décorer un petit couloir ?")
 
 {% endfig %}
 
@@ -43,7 +43,7 @@ Y a-t-il des coins dans votre couloir ? Ils peuvent vous aider à améliorer la 
 
 {% fig %}
 
-![Système de stockage dans un petit couloir](/uploads/duzy-bialy-nowoczesny-przedpokoj.jpg "Système de stockage dans un petit couloir")
+![Système de stockage dans un petit couloir](/uploads/nowoczesny-przedpokoj.jpg "Système de stockage dans un petit couloir")
 
 {% endfig %}
 
@@ -55,13 +55,13 @@ Une bonne idée pour la décoration d'un couloir moderne consiste à accrocher a
 
 {% fig %}
 
-![Couloir long et étroit - idées de décoration](/uploads/obrazy-na-scianie.jpg "Couloir long et étroit - idées de décoration")
+![Couloir long et étroit - idées de décoration](/uploads/nowoczesny-przedpokoj.jpg "Couloir long et étroit - idées de décoration")
 
 {% endfig %}
 
 {% fig %}
 
-![Idées de couloir - images](/uploads/nowoczesny-przedpokoj-obrazy.jpg "Idées de couloir - images")
+![Idées de couloir - images](/uploads/nowoczesny-przedpokoj.jpg "Idées de couloir - images")
 
 {% endfig %}
 
@@ -73,13 +73,13 @@ Au lieu d'affiches ou d'images dans des cadres décoratifs, vous pourriez utilis
 
 {% fig %}
 
-![Décor de couloir - miroir](/uploads/lustra-na-scianie.jpg "Décor de couloir - miroir")
+![Décor de couloir - miroir](/uploads/nowoczesny-przedpokoj.jpg "Décor de couloir - miroir")
 
 {% endfig %}
 
 {% fig %}
 
-![Décoration des couloirs - miroirs](/uploads/rozne-lustra-na-scianie.jpg "Décoration des couloirs - miroirs")
+![Décoration des couloirs - miroirs](/uploads/nowoczesny-przedpokoj.jpg "Décoration des couloirs - miroirs")
 
 {% endfig %}
 
@@ -87,7 +87,7 @@ Au lieu d'affiches ou d'images dans des cadres décoratifs, vous pourriez utilis
 
 {% fig %}
 
-![Idées de décoration de couloir - étagère](/uploads/polki-z-kwiatami-przedpokoj.jpg "Idées de décoration de couloir - étagère")
+![Idées de décoration de couloir - étagère](/uploads/nowoczesny-przedpokoj.jpg "Idées de décoration de couloir - étagère")
 
 {% endfig %}
 
@@ -99,7 +99,7 @@ Les intérieurs des maisons utilisent généralement des moulures en polystyrèn
 
 {% fig %}
 
-![Des moulures sur les murs des couloirs ? Une idée géniale !](/uploads/sztukateria-na-scianie-korytarz.jpg "Des moulures sur les murs des couloirs ? Une idée géniale !")
+![Des moulures sur les murs des couloirs ? Une idée géniale !](/uploads/nowoczesny-przedpokoj.jpg "Des moulures sur les murs des couloirs ? Une idée géniale !")
 
 {% endfig %}
 
@@ -111,7 +111,7 @@ Un couloir moderne est le résultat de votre propre créativité - vous pouvez d
 
 {% fig %}
 
-![Décoration murale](/uploads/sztukateria-na-scianie-przedpokoj.jpg "Décoration murale")
+![Décoration murale](/uploads/nowoczesny-przedpokoj.jpg "Décoration murale")
 
 {% endfig %}
 
@@ -121,7 +121,7 @@ Vous possédez un très grand couloir ? Vous avez pris soin de tous les élémen
 
 {% fig %}
 
-![Papier peint photo personnalisé dans le couloir](/uploads/nowoczesny-przedpokoj-fototapeta.jpg "Papier peint photo personnalisé dans le couloir")
+![Papier peint photo personnalisé dans le couloir](/uploads/nowoczesny-przedpokoj.jpg "Papier peint photo personnalisé dans le couloir")
 
 {% endfig %}
 

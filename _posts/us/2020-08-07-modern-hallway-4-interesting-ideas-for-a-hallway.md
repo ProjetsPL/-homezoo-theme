@@ -35,7 +35,7 @@ There are many clever solutions that will allow you to have all those elements -
 
 {% fig %}
 
-![How to decorate a small hallway?](/uploads/maly-przedpokoj.jpg "How to decorate a small hallway?")
+![How to decorate a small hallway?](/uploads/nowoczesny-przedpokoj.jpg "How to decorate a small hallway?")
 
 {% endfig %}
 
@@ -51,7 +51,7 @@ Are there any nooks in your hallway? They can help you increase the functionalit
 
 {% fig %}
 
-![Storage system in a small hallway](/uploads/duzy-bialy-nowoczesny-przedpokoj.jpg "Storage system in a small hallway")
+![Storage system in a small hallway](/uploads/nowoczesny-przedpokoj.jpg "Storage system in a small hallway")
 
 {% endfig %}
 
@@ -63,13 +63,13 @@ A good idea for a modern hallway decor is **hanging some paintings, posters or f
 
 {% fig %}
 
-![Long and narrow hallway - decor ideas](/uploads/obrazy-na-scianie.jpg "Long and narrow hallway - decor ideas")
+![Long and narrow hallway - decor ideas](/uploads/nowoczesny-przedpokoj.jpg "Long and narrow hallway - decor ideas")
 
 {% endfig %}
 
 {% fig %}
 
-![Hallway ideas pictures](/uploads/nowoczesny-przedpokoj-obrazy.jpg "Hallway ideas pictures")
+![Hallway ideas pictures](/uploads/nowoczesny-przedpokoj.jpg "Hallway ideas pictures")
 
 {% endfig %}
 
@@ -81,13 +81,13 @@ Instead of posters or pictures in ornamental frames, you could use mirrors. It's
 
 {% fig %}
 
-![Hallway decor mirror](/uploads/lustra-na-scianie.jpg "Hallway decor mirror")
+![Hallway decor mirror](/uploads/nowoczesny-przedpokoj.jpg "Hallway decor mirror")
 
 {% endfig %}
 
 {% fig %}
 
-![Hallway decor mirrors](/uploads/rozne-lustra-na-scianie.jpg "Hallway decor mirrors")
+![Hallway decor mirrors](/uploads/nowoczesny-przedpokoj.jpg "Hallway decor mirrors")
 
 {% endfig %}
 
@@ -95,7 +95,7 @@ Instead of posters or pictures in ornamental frames, you could use mirrors. It's
 
 {% fig %}
 
-![Hallway decor ideas shelf](/uploads/polki-z-kwiatami-przedpokoj.jpg "Hallway decor ideas shelf")
+![Hallway decor ideas shelf](/uploads/nowoczesny-przedpokoj.jpg "Hallway decor ideas shelf")
 
 {% endfig %}
 
@@ -107,7 +107,7 @@ Home interiors typically use styrofoam moulding, which is lightweight and easy t
 
 {% fig %}
 
-![Moulding on hallway walls? A great idea!](/uploads/sztukateria-na-scianie-korytarz.jpg "Moulding on hallway walls? A great idea!")
+![Moulding on hallway walls? A great idea!](/uploads/nowoczesny-przedpokoj.jpg "Moulding on hallway walls? A great idea!")
 
 {% endfig %}
 
@@ -119,7 +119,7 @@ A modern hallway is a result of your own creativity - so you can create interest
 
 {% fig %}
 
-![Wall mouding decoration](/uploads/sztukateria-na-scianie-przedpokoj.jpg "Wall mouding decoration")
+![Wall mouding decoration](/uploads/nowoczesny-przedpokoj.jpg "Wall mouding decoration")
 
 {% endfig %}
 
@@ -129,7 +129,7 @@ You own a really large hallway? Have you taken care of all the basic elements bu
 
 {% fig %}
 
-![Custom photo wallpaper in the hallway](/uploads/nowoczesny-przedpokoj-fototapeta.jpg "Custom photo wallpaper in the hallway")
+![Custom photo wallpaper in the hallway](/uploads/nowoczesny-przedpokoj.jpg "Custom photo wallpaper in the hallway")
 
 {% endfig %}
 

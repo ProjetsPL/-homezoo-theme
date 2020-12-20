@@ -27,7 +27,7 @@ Es gibt viele clevere Lösungen, die es Ihnen ermöglichen, all diese Elemente z
 
 {% fig %}
 
-![Wie schmückt man einen kleinen Flur?](/uploads/maly-przedpokoj.jpg "Wie schmückt man einen kleinen Flur?")
+![Wie schmückt man einen kleinen Flur?](/uploads/nowoczesny-przedpokoj.jpg "Wie schmückt man einen kleinen Flur?")
 
 {% endfig %}
 
@@ -43,7 +43,7 @@ Gibt es irgendwelche Ecken in Ihrem Flur? Sie können Ihnen helfen, die Funktion
 
 {% fig %}
 
-![Lagersystem in einem kleinen Flur](/uploads/duzy-bialy-nowoczesny-przedpokoj.jpg "Lagersystem in einem kleinen Flur")
+![Lagersystem in einem kleinen Flur](/uploads/nowoczesny-przedpokoj.jpg "Lagersystem in einem kleinen Flur")
 
 {% endfig %}
 
@@ -55,13 +55,13 @@ Eine gute Idee für eine moderne Flurdekoration ist es, einige **Gemälde, Poste
 
 {% fig %}
 
-![Langer und schmaler Flur - Dekorationsideen](/uploads/obrazy-na-scianie.jpg "Langer und schmaler Flur - Dekorationsideen")
+![Langer und schmaler Flur - Dekorationsideen](/uploads/nowoczesny-przedpokoj.jpg "Langer und schmaler Flur - Dekorationsideen")
 
 {% endfig %}
 
 {% fig %}
 
-![Bilder von Flurideen](/uploads/nowoczesny-przedpokoj-obrazy.jpg "Bilder von Flurideen")
+![Bilder von Flurideen](/uploads/nowoczesny-przedpokoj.jpg "Bilder von Flurideen")
 
 {% endfig %}
 
@@ -73,13 +73,13 @@ Statt Plakaten oder Bildern in Ornamentrahmen könnten Sie Spiegel verwenden. Da
 
 {% fig %}
 
-![Flur-Dekor-Spiegel](/uploads/lustra-na-scianie.jpg "Flur-Dekor-Spiegel")
+![Flur-Dekor-Spiegel](/uploads/nowoczesny-przedpokoj.jpg "Flur-Dekor-Spiegel")
 
 {% endfig %}
 
 {% fig %}
 
-![Flurdekor-Spiegel](/uploads/rozne-lustra-na-scianie.jpg "Flurdekor-Spiegel")
+![Flurdekor-Spiegel](/uploads/nowoczesny-przedpokoj.jpg "Flurdekor-Spiegel")
 
 {% endfig %}
 
@@ -87,7 +87,7 @@ Statt Plakaten oder Bildern in Ornamentrahmen könnten Sie Spiegel verwenden. Da
 
 {% fig %}
 
-![Regal für Dekorationsideen im Flur](/uploads/polki-z-kwiatami-przedpokoj.jpg "Regal für Dekorationsideen im Flur")
+![Regal für Dekorationsideen im Flur](/uploads/nowoczesny-przedpokoj.jpg "Regal für Dekorationsideen im Flur")
 
 {% endfig %}
 
@@ -99,7 +99,7 @@ In Innenräumen werden in der Regel Styroporformteile verwendet, die leicht und 
 
 {% fig %}
 
-![Schimmelpilze an Flurwänden? Eine großartige Idee!](/uploads/sztukateria-na-scianie-korytarz.jpg "Schimmelpilze an Flurwänden? Eine großartige Idee!")
+![Schimmelpilze an Flurwänden? Eine großartige Idee!](/uploads/nowoczesny-przedpokoj.jpg "Schimmelpilze an Flurwänden? Eine großartige Idee!")
 
 {% endfig %}
 
@@ -111,7 +111,7 @@ Ein moderner Flur ist das Ergebnis Ihrer eigenen Kreativität - so können Sie i
 
 {% fig %}
 
-![Wanddekoration](/uploads/sztukateria-na-scianie-przedpokoj.jpg "Wanddekoration")
+![Wanddekoration](/uploads/nowoczesny-przedpokoj.jpg "Wanddekoration")
 
 {% endfig %}
 
@@ -121,7 +121,7 @@ Sie besitzen einen wirklich großen Flur? Haben Sie sich um alle Grundelemente g
 
 {% fig %}
 
-![Benutzerdefinierte Fototapete im Flur](/uploads/nowoczesny-przedpokoj-fototapeta.jpg "Benutzerdefinierte Fototapete im Flur")
+![Benutzerdefinierte Fototapete im Flur](/uploads/nowoczesny-przedpokoj.jpg "Benutzerdefinierte Fototapete im Flur")
 
 {% endfig %}
 

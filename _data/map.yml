@@ -1,39 +1,4 @@
 ---
-- us: _posts/us/2020-08-21-beautiful-christmas-table-decorations.11-christmas-table-ideas.md
-  pl: _posts/pl/2020-08-15-dekoracja-stolu-wigilijnego-11-pomyslow-na-stol-wigilijny.md
-  de: _posts/de/2020-08-23-wunderschone-tischdekorationen-zu-weihnachten.11-ideen-fur-weihnachtliche-tischdekorationen.md
-  es: _posts/es/2020-08-23-hermosas-decoraciones-de-mesa-de-navidad.11-ideas-para-la-mesa-de-navidad.md
-  fr: _posts/fr/2020-08-23-belles-decorations-de-table-de-noel-11-idees-de-table-de-noel.md
-  it: _posts/it/2020-08-23-bellissime-decorazioni-per-la-tavola-di-natale-11-idee-per-la-tavola-di-natale.md
-  en: ''
-- us: _posts/us/2020-08-14-christmas-ornaments-10-christmas-decorating-ideas.md
-  pl: _posts/pl/2020-08-14-ozdoby-swiateczne-10-pomyslow-na-dekoracje-bozonarodzeniowe.md
-  de: _posts/de/2020-08-22-weihnachtsschmuck-10-weihnachtsdekorations-ideen.md
-  es: _posts/es/2020-08-22-adornos-de-navidad-10-ideas-de-decoracion-de-navidad.md
-  fr: _posts/fr/2020-08-22-decorations-de-noel-10-idees-de-decoration-de-noel.md
-  it: _posts/it/2020-08-23-ornamenti-di-natale-10-idee-di-decorazione-natalizia.md
-  en: ''
-- us: _posts/us/2020-08-21-beautiful-balcony-decor-10-best-small-balcony-ideas.md
-  pl: _posts/pl/2020-08-07-aranzacja-balkonu-10-najlepszych-rozwiazan-na-maly-balkon.md
-  de: _posts/de/2020-08-21-wunderschone-balkondekoration-10-beste-ideen-fur-kleine-balkone.md
-  es: _posrs/es/2020-08-22-hermosa-decoracion-de-balcon-10-mejores-ideas-para-pequenos-balcones.md
-  fr: _posts/fr/2020-08-22-belle-decoration-de-balcon-10-meilleures-idees-de-petits-balcons.md
-  it: _posts/it/2020-08-22-bella-decorazione-del-balcone-10-migliori-idee-per-un-piccolo-balcone.md
-  en: ''
-- us: _posts/us/2020-08-14-6-common-mistakes-you-should-avoid-when-decorating-studio-apartment.md
-  pl: _posts/pl/2020-07-31-6-bledow-ktorych-warto-unikac-urzadzajac-male-mieszkanie.md
-  de: _posts/de/2020-08-15-6-fehler-die-bei-einrichtung-von-einzimmerwohnung-zu-vermeiden.md
-  es: _posts/es/2020-08-21-6-errores-a-evitar-al-decorar-el-apartamento-estudio.md
-  fr: _posts/fr/2020-08-21-6-erreurs-courantes-a-eviter-lors-de-la-decoration-d-un-studio.md
-  it: _posts/it/2020-08-21-6-errori-comuni-da-evitare-nella-decorazione-di-un-monolocale.md
-  en: ''
-- us: _posts/us/2020-08-08-living-room-lighting-9-brilliant-ideas-for-living-room-lamps.md
-  pl: _posts/pl/2020-07-03-oryginalne-oswietlenie-salonu-9-pomyslow-na-lampy-do-salonu.md
-  de: _posts/de/2020-08-08-beleuchtung-im-wohnzimmer-9-ideen-fur-wohnzimmerlampe.md
-  es: _posts/es/2020-08-08-sala-de-estar-iluminacion-9-ideas-para-sala-de-estar-lamparas.md
-  fr: _posts/fr/2020-08-14-eclairage-du-salon-9-idees-brillantes-pour-les-lampes-de-salon.md
-  it: _posts/it/2020-08-14-illuminazione-del-soggiorno-9-idee-per-le-lampade-da-soggiorno.md
-  en: ''
 - us: _posts/us/2020-08-07-modern-hallway-4-interesting-ideas-for-a-hallway.md
   pl: _posts/pl/2020-06-26-nowoczesny-przedpokoj-4-ciekawe-aranzacje-sciany-w-przedpokoju
   de: _posts/de/2020-08-07-moderner-flur-4-interessante-ideen-fur-einen-flur.md
@@ -41,31 +6,17 @@
   fr: _posts/fr/2020-08-07-un-couloir-moderne-4-idees-interessantes-pour-un-couloir.md
   it: _posts/it/2020-08-07-corridoio-moderno-4-idee-interessanti-per-un-corridoio.md
   en: ''
-- us: _posts/us/2020-07-31-brick-wall-14-amazing-designs-that-will-delight-you.md
-  pl: _posts/pl/2020-06-12-cegla-na-scianie-14-najlepszych-aranzacji-ktore-cie-zachwyca.md
-  de: _posts/de/2020-08-03-backsteinmauer-14-erstaunliche-entwurfe-die-sie-begeistern.md
-  es: _posts/es/2020-08-03-muro-de-ladrillo-14-increibles-disenos-que-te-encantaran.md
-  fr: _posts/fr/2020-08-03-mur-de-briques-14-dessins-etonnants-qui-vous-raviront.md
-  it: _posts/it/2020-08-03-muro-di-mattoni-14-fantastici-disegni-che-vi-delizieranno.md
-  en: ''
-- us: _posts/us/2020-07-31-how-to-enliven-white-kitchen-7-interesting-ideas.md
-  pl: _posts/pl/2020-06-16-biala-kuchnia-7-ciekawych-propozycji-jak-ja-ozywic.md
-  de: _posts/de/2020-08-03-wie-belebt-man-die-weisse-kuche-7-interessante-ideen.md
-  es: _posts/es/2020-08-03-como-animar-la-cocina-blanca-7-ideas-interesantes.md
-  fr: _posts/fr/2020-08-03-comment-animer-la-cuisine-blanche-7-idees-interessantes.md
-  it: _posts/it/2020-08-03-come-animare-la-cucina-bianca-7-idee-interessanti.md
-  en: ''
-- us: us/index.html
-  pl: pl/index.html
-  de: de/index.html
-  es: es/index.html
-  fr: fr/index.html
-  it: it/index.html
-  en: index.html
-- us: us/blog.html
-  pl: pl/blog.html
-  de: de/blog.html
-  es: es/blog.html
-  fr: fr/blog.html
-  it: it/blog.html
+- us: us/index.md
+  pl: pl/index.md
+  de: de/index.md
+  es: es/index.md
+  fr: fr/index.md
+  it: it/index.md
+  en: index.md
+- us: us/blog.md
+  pl: pl/blog.md
+  de: de/blog.md
+  es: es/blog.md
+  fr: fr/blog.md
+  it: it/blog.md
   en: 

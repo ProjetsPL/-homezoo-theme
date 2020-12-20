@@ -27,7 +27,7 @@ Hay muchas soluciones inteligentes que le permitirán tener todos esos elementos
 
 {% fig %}
 
-![¿Cómo decorar un pequeño pasillo?](/uploads/maly-przedpokoj.jpg "¿Cómo decorar un pequeño pasillo?")
+![¿Cómo decorar un pequeño pasillo?](/uploads/nowoczesny-przedpokoj.jpg "¿Cómo decorar un pequeño pasillo?")
 
 {% endfig %}
 
@@ -43,7 +43,7 @@ Si tienes un poco más de espacio en tu pasillo, considera conseguir más compar
 
 {% fig %}
 
-![Sistema de almacenamiento en un pequeño pasillo](/uploads/duzy-bialy-nowoczesny-przedpokoj.jpg "Sistema de almacenamiento en un pequeño pasillo")
+![Sistema de almacenamiento en un pequeño pasillo](/uploads/nowoczesny-przedpokoj.jpg "Sistema de almacenamiento en un pequeño pasillo")
 
 {% endfig %}
 
@@ -55,13 +55,13 @@ Una buena idea para la decoración de un pasillo moderno es colgar algunos **cua
 
 {% fig %}
 
-![Pasillo largo y estrecho - ideas de decoración](/uploads/obrazy-na-scianie.jpg "Pasillo largo y estrecho - ideas de decoración")
+![Pasillo largo y estrecho - ideas de decoración](/uploads/nowoczesny-przedpokoj.jpg "Pasillo largo y estrecho - ideas de decoración")
 
 {% endfig %}
 
 {% fig %}
 
-![Fotos de ideas para el pasillo](/uploads/nowoczesny-przedpokoj-obrazy.jpg "Fotos de ideas para el pasillo")
+![Fotos de ideas para el pasillo](/uploads/nowoczesny-przedpokoj.jpg "Fotos de ideas para el pasillo")
 
 {% endfig %}
 
@@ -73,13 +73,13 @@ En lugar de pósters o cuadros en marcos ornamentales, podrías usar espejos. Es
 
 {% fig %}
 
-![Decoración del pasillo - espejo](/uploads/lustra-na-scianie.jpg "Decoración del pasillo - espejo")
+![Decoración del pasillo - espejo](/uploads/nowoczesny-przedpokoj.jpg "Decoración del pasillo - espejo")
 
 {% endfig %}
 
 {% fig %}
 
-![Decoración del pasillo - espejos](/uploads/rozne-lustra-na-scianie.jpg "Decoración del pasillo - espejos")
+![Decoración del pasillo - espejos](/uploads/nowoczesny-przedpokoj.jpg "Decoración del pasillo - espejos")
 
 {% endfig %}
 
@@ -87,7 +87,7 @@ En lugar de pósters o cuadros en marcos ornamentales, podrías usar espejos. Es
 
 {% fig %}
 
-![Ideas para la decoración del pasillo - estante](/uploads/polki-z-kwiatami-przedpokoj.jpg "Ideas para la decoración del pasillo - estante")
+![Ideas para la decoración del pasillo - estante](/uploads/nowoczesny-przedpokoj.jpg "Ideas para la decoración del pasillo - estante")
 
 {% endfig %}
 
@@ -99,7 +99,7 @@ Los interiores de las casas suelen usar molduras de poliestireno, que son ligera
 
 {% fig %}
 
-![¿Molduras en las paredes de los pasillos? ¡Una gran idea!](/uploads/sztukateria-na-scianie-korytarz.jpg "¿Molduras en las paredes de los pasillos? ¡Una gran idea!")
+![¿Molduras en las paredes de los pasillos? ¡Una gran idea!](/uploads/nowoczesny-przedpokoj.jpg "¿Molduras en las paredes de los pasillos? ¡Una gran idea!")
 
 {% endfig %}
 
@@ -111,7 +111,7 @@ Un pasillo moderno es el resultado de tu propia creatividad, así que puedes cre
 
 {% fig %}
 
-![Decoración de la pared](/uploads/sztukateria-na-scianie-przedpokoj.jpg "Decoración de la pared")
+![Decoración de la pared](/uploads/nowoczesny-przedpokoj.jpg "Decoración de la pared")
 
 {% endfig %}
 
@@ -121,7 +121,7 @@ Un pasillo moderno es el resultado de tu propia creatividad, así que puedes cre
 
 {% fig %}
 
-![Papel fotográfico personalizado en el pasillo](/uploads/nowoczesny-przedpokoj-fototapeta.jpg "Papel fotográfico personalizado en el pasillo")
+![Papel fotográfico personalizado en el pasillo](/uploads/nowoczesny-przedpokoj.jpg "Papel fotográfico personalizado en el pasillo")
 
 {% endfig %}
 
