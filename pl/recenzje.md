@@ -9,5 +9,5 @@ seo_section:
   title: Korzystaj z porad specjalistów
   content: |-
     Marzysz o pięknym domu lub ogrodzie, ale nie wiesz, od czego zacząć? Szukasz wskazówek dotyczących produktów, prac remontowych, czy wyboru sprzętu do mieszkania? Nie wiesz, jakie meble wybrać lub czy będą pasować do danego wnętrza? Nie musisz już więcej się martwić. Skorzystaj z podpowiedzi naszych specjalistów. Przygotowaliśmy dla Ciebie porady z różnych obszarów tematycznych.
-published: false
+published: true
 ---

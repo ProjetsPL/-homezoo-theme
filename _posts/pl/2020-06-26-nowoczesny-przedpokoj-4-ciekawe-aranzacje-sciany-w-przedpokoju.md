@@ -5,7 +5,7 @@ main_keywords:
 - pomysł na przedpokój
 - nowoczesny przedpokój
 - co na ścianę w przedpokoju
-- 'ściany w przedpokoju '
+- ściany w przedpokoju
 - co położyć na ściany w przedpokoju
 - przedpokój ściany
 - co na ściany w przedpokoju
@@ -24,17 +24,12 @@ intro: Zależy Ci, aby urządzić nowoczesny przedpokój? Niezależnie od tego, 
   z naszych wskazówek, które ułatwią Ci to zadanie.
 image: "/uploads/nowoczesny-przedpokoj.jpg"
 related_products: []
-
 belongs_to_hub: false
-
-products_quantity: 3
-products_category:
-  - materace
-products_tags: 
-  - swieta
-  - wesele
-property: properties.size
-property_value: 90x200
+products_quantity:
+products_category: []
+products_tags: []
+property:
+property_value:
 
 
 ---
