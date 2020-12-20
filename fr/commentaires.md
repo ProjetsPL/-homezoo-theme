@@ -9,5 +9,5 @@ seo_section:
   title: SEO SECTION title
   content: |-
     SEO SECTION content
-published: true
+published: false
 ---

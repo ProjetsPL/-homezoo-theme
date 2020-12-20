@@ -1,0 +1,71 @@
+---
+label: Products-subcategory
+hide_body: false
+display_field: page_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: products-subcategory
+  hidden: true
+- type: text
+  name: page_name
+  label: Nazwa strony
+- type: text
+  name: h1
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+- name: main_keywords
+  type: tag_list
+  default: []
+  label: Główne keywordy
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Wstęp
+- type: text
+  name: canonical_url
+  label: Canonical URL
+- name: products_category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/categories.yml
+      path: categories
+  label: Kategoria wyświetlanych produktów
+- type: text
+  name: product_context
+  label: Kontekst dla produktów
+- type: text
+  name: property
+  label: Właściwość wyświetlanych produktów
+  description: properties.nazwa_właściwości
+- type: text
+  name: property_value
+  label: Wartość dla właściwości wyświetlanych produktów
+- type: boolean
+  name: seo_section
+  label: Sekcja SEO
+- type: boolean
+  name: toc
+  label: toc
+  default: true
+  hidden: true
+pages:
+- _products_listings/de/produkte/matratzen/sprungfedermatratze.md
+- _products_listings/pl/produkty/lampy/zewnetrzne.md

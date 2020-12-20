@@ -1,0 +1,73 @@
+---
+label: Product [Oczyszczacze powietrza]
+hide_body: true
+fields:
+- name: basics
+  type: include
+  config: {}
+  template: product
+  label: Basics
+- name: properties
+  type: field_group
+  config: {}
+  fields:
+  - name: brand
+    type: text
+    config:
+      required: false
+    label: Marka
+  - name: moisturizing
+    type: boolean
+    label: Nawilżanie
+    default: false
+  - name: performance
+    type: text
+    config:
+      required: false
+    label: Wydajność
+  - name: filters
+    type: text
+    config:
+      required: false
+    label: Filtry
+  - name: volume_level
+    type: text
+    config:
+      required: false
+    label: Poziom głośności
+  - name: maximum_area
+    type: text
+    config:
+      required: false
+    label: Maksymalna powierzchnia pomieszczenia
+  - name: ionizer
+    type: text
+    config:
+      required: false
+    label: Jonizator
+  - name: power
+    type: text
+    config:
+      required: false
+    label: Moc
+  label: Właściwości
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości
+pages:
+- _products/pl/oczyszczacze-powietrza/Philips-AC1214-10.md
+- _products/pl/oczyszczacze-powietrza/Philips-AC2887-10.md
+- _products/pl/oczyszczacze-powietrza/Philips-AC2889-10.md
+- _products/pl/oczyszczacze-powietrza/Philips-AC2959-53.md
+- _products/pl/oczyszczacze-powietrza/Philips-AC3256-10.md
+- _products/pl/oczyszczacze-powietrza/Samsung-AX47R9080SS.md
+- _products/pl/oczyszczacze-powietrza/Samsung-AX60R5080WD.md
+- _products/pl/oczyszczacze-powietrza/Samsung-AX90R7080WD.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KC-A50EUW.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KC-D40EUW.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KC-F32EUW.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KC-G50EUH.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KC-G60EUW.md
+- _products/pl/oczyszczacze-powietrza/Sharp-KI-G75EUW.md
+- _products/pl/oczyszczacze-powietrza/Sharp-UA-PE30E-WB.md
+- _products/pl/oczyszczacze-powietrza/Xiaomi-Mi-Air-Purifier-2H.md
+- _products/pl/oczyszczacze-powietrza/Xiaomi-Mi-Air-Purifier-2s.md
+- _products/pl/oczyszczacze-powietrza/Xiaomi-Mi-Air-Purifier-3H.md

@@ -2,13 +2,6 @@
 label: Product [Pozostałe]
 hide_body: true
 fields:
-- name: category
-  type: text
-  config:
-    required: false
-  label: Category
-  hidden: true
-  default: other
 - name: basics
   type: include
   config: {}
@@ -29,3 +22,4 @@ fields:
       required: false
     label: Kolor
   label: Właściwości
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości

@@ -28,7 +28,7 @@
           <header class="article-header">
             <div class="detail-box">
               <span>{{ site.i18n[page.lang].updated }}: <time datetime="{{ page.update_date | date_to_xmlschema }}">{{page.update_date | date: '%d-%m-%Y'}}</time></span>
-              <span class="article-label article-label-garden">{{ site.i18n[page.lang].home_and_garden }}</span>
+              <!-- <span class="article-label article-label-garden">{{ site.i18n[page.lang].pets }}</span> -->
             </div>
             <h1>{{ page.title }}</h1>
 
@@ -178,11 +178,6 @@
                       <span class="title">{{ site.i18n[page.lang].toc }}</span>
                       {{ content | toc_only }}
                     </nav>
-                    {% if page.lang == "pl" %}
-                    <div class="fb-page-wrapper">
-                      <div class="fb-page" data-href="https://www.facebook.com/treehouseinspiruje/" data-tabs="" data-width="440" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/treehouseinspiruje/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/treehouseinspiruje/">Treehouse</a></blockquote></div>
-                    </div>
-                    {% endif %}
                   </div>
                 </div>
             </div>

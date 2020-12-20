@@ -8,5 +8,5 @@ intro: intro
 seo_section:
     title: SEO section title
     content: SEO section content
-published: true
+published: false
 ---

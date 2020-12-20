@@ -2,13 +2,6 @@
 label: Product [Pralki]
 hide_body: true
 fields:
-- name: category
-  type: text
-  config:
-    required: false
-  label: Kategoria
-  hidden: true
-  default: pralki
 - name: basics
   type: include
   config: {}
@@ -25,7 +18,7 @@ fields:
       required: false
     label: Typ
     description: Typ pralki
-  - name: size
+  - name: product_size
     type: text
     config:
       required: false
@@ -66,4 +59,6 @@ fields:
       required: false
     label: Roczne zużycie wody
   label: Właściwości
-  description: Właściwości produktu
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości
+pages:
+- _products/pl/pralki/bosch-wor20155pl-ladowana-od-gory-slim.md

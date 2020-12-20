@@ -10,22 +10,20 @@ sections:
   create: all
   match: "**/*"
   new_doc_ext: yml
-- type: directory
-  path: ''
-  label: _International
-  create: all
-  match: "*"
+- type: document
+  path: index.html
+  label: Strona startowa
 - type: heading
   label: PL
 - type: directory
   path: pl
-  label: Strony pl
+  label: Strony (pl)
   create: all
   match: "**/*"
   new_doc_ext: md
 - type: directory
   path: _posts/pl
-  label: Posty pl
+  label: Posty (pl)
   create: all
   match: "**/*"
   new_doc_ext: md
@@ -38,6 +36,7 @@ sections:
   match: "**/*"
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/pl
   label: Produkty (pl)
@@ -45,11 +44,31 @@ sections:
   match: "**/*"
   new_doc_ext: md
   templates:
+  - product-telewizory
+  - product-lodowki
+  - product-oczyszczacze-powietrza
   - product-lamp
   - product-mattress
   - product-ekspresy-do-kawy
   - product-patelnie
   - product-pralki
+- type: directory
+  path: _products_listings/pl/produkty
+  label: Kategorie produktowe (pl)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - products-subcategory
+  - products-category
+- type: directory
+  path: _events/pl
+  label: Wydarzenia (pl)
+  create: all
+  match: "**/*"
+  new_doc_ext: app
+  templates:
+  - event
 - type: heading
   label: US
 - type: directory
@@ -67,19 +86,36 @@ sections:
   templates:
   - blog-post
 - type: directory
-  path: us/recenzje
+  path: us/reviews
   label: Rankingi (us)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/us
   label: Produkty (us)
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: directory
+  path: _products_listings/us/products
+  label: Kategorie produktowe (us)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - products-subcategory
+  - products-category
+- type: directory
+  path: _events/us
+  label: Wydarzenia (us)
+  create: all
+  match: "**/*"
+  templates:
+  - event
 - type: heading
   label: DE
 - type: directory
@@ -97,22 +133,36 @@ sections:
   templates:
   - blog-post
 - type: directory
-  path: de/recenzje
+  path: de/rezensionen
   label: Rankingi (de)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/de
   label: Produkty (de)
   create: all
   match: "**/*"
   new_doc_ext: md
+- type: directory
+  path: _products_listings/de/produkte
+  label: Kategorie produktowe (de)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
   templates:
-  - product-mattress
-  - product-lamp
+  - products-category
+  - products-subcategory
+- type: directory
+  path: _events/de
+  label: Wydarzenia (de)
+  create: all
+  match: "**/*"
+  templates:
+  - event
 - type: heading
   label: ES
 - type: directory
@@ -130,13 +180,14 @@ sections:
   templates:
   - blog-post
 - type: directory
-  path: es/recenzje
+  path: es/resenas
   label: Rankingi (es)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/es
   label: Produkty (es)
@@ -146,72 +197,116 @@ sections:
   templates:
   - product-mattress
   - product-lamp
+- type: directory
+  path: _products_listings/es/productos
+  label: Kategorie produktowe (es)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - products-subcategory
+  - products-category
+- type: directory
+  path: _events/es
+  label: Wydarzenia (es)
+  create: all
+  match: "**/*"
+  templates:
+  - event
 - type: heading
   label: FR
 - type: directory
   path: fr
-  label: Strony
+  label: Strony (fr)
   create: all
   match: "**/*"
   new_doc_ext: md
 - type: directory
   path: _posts/fr
-  label: Posty
+  label: Posty (fr)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - blog-post
 - type: directory
-  path: fr/recenzje
-  label: Rankingi
+  path: fr/commentaires
+  label: Rankingi (fr)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/fr
-  label: Produkty
+  label: Produkty (fr)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+- type: directory
+  path: _products_listings/fr/produits
+  label: Kategorie produktowe (fr)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
-  - product-mattress
-  - product-lamp
+  - products-subcategory
+  - products-category
+- type: directory
+  path: _events/fr
+  label: Wydarzenia (fr)
+  create: all
+  match: "**/*"
+  templates:
+  - event
 - type: heading
   label: IT
 - type: directory
   path: it
-  label: Strony (es)
+  label: Strony (it)
   create: all
   match: "**/*"
   new_doc_ext: md
 - type: directory
   path: _posts/it
-  label: Posty (es)
+  label: Posty (it)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - blog-post
 - type: directory
-  path: it/recenzje
-  label: Rankingi (es)
+  path: it/recensioni
+  label: Rankingi (it)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
   - ranking
+  - ranking-hub
 - type: directory
   path: _products/it
-  label: Produkty (es)
+  label: Produkty (it)
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+- type: directory
+  path: _products_listings/it/prodotti
+  label: Kategorie produktowe (it)
   create: all
   match: "**/*"
   new_doc_ext: md
   templates:
-  - product-mattress
-  - product-lamp
+  - products-subcategory
+  - products-category
+- type: directory
+  path: _events/it
+  label: Wydarzenia (it)
+  create: all
+  match: "**/*"
+  templates:
+  - event
 - type: heading
   label: Jekyll
 - type: document

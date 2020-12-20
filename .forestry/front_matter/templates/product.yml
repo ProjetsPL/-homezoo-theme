@@ -2,19 +2,35 @@
 label: Product [Base]
 hide_body: true
 fields:
-- name: links
-  type: blocks
-  label: Linki
-  template_types:
-  - link
-  config:
-    min: 
-    max: 
 - name: name
   type: text
   config:
     required: true
   label: Nazwa
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/categories.yml
+      path: categories
+  label: Kategoria
+- name: tags
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/tags.yml
+      path: tags
+  label: Tagi produktu
 - name: description
   type: textarea
   default: ''
@@ -29,6 +45,30 @@ fields:
   config:
     maxSize: 64
   label: Zdjęcie
+- name: distinction
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - our_choice
+    - budget
+    - premium
+    - hot
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Wyróżnienie
+- name: links
+  type: blocks
+  label: Linki
+  template_types:
+  - link
+  config:
+    min: 
+    max: 
 - name: opinion
   type: field_group
   config: {}
@@ -50,19 +90,3 @@ fields:
       max: 
     label: Recenzje
   label: Opinia
-- name: distinction
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - our_choice
-    - budget
-    - premium
-    - hot
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Wyróżnienie

@@ -1,0 +1,62 @@
+---
+label: Index
+hide_body: true
+display_field: page_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: index
+- type: text
+  name: page_name
+  label: Nazwa strony
+  description: Wyświetla się w nawigacjach i breadcrumbach
+- type: text
+  name: h1
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+- type: boolean
+  name: recent_articles
+  label: Polecane artykuły
+- type: boolean
+  name: recent_rankings
+  label: Polecane rankigi
+- type: field_group
+  name: first_seo_section
+  label: Sekcja SEO (lewa)
+  fields:
+  - type: text
+    name: title
+    label: Tytuł
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Treść
+- type: field_group
+  name: second_seo_section
+  label: Sekcja SEO (prawa)
+  fields:
+  - type: text
+    name: title
+    label: Tytuł
+  - type: textarea
+    name: content
+    label: Treść
+pages:
+- de/index.md
+- es/index.md
+- fr/index.md
+- it/index.md
+- pl/index.md
+- us/index.md

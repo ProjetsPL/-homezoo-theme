@@ -1,0 +1,61 @@
+---
+label: Products
+hide_body: true
+display_field: page_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: products
+  hidden: true
+- type: text
+  name: page_name
+  label: Nazwa strony
+  description: Wyświetla się w nawigacjach i breadcrumbach
+- type: text
+  name: h1
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Opis (SEO)
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Wstęp
+- type: field_group
+  name: seo_section
+  label: Sekcja SEO
+  fields:
+  - type: text
+    name: title
+    label: Tytuł
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Treść
+pages:
+- de/produkte.md
+- es/productos.md
+- fr/produits.md
+- it/prodotti.md
+- pl/produkty.md
+- us/products.md

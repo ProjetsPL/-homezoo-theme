@@ -1,0 +1,49 @@
+---
+label: Rankings
+hide_body: true
+display_field: page_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: rankings
+  hidden: true
+- type: text
+  name: page_name
+  label: Nazwa strony
+  description: Wyświetla się w nawigacjach i breadcrumbach
+- type: text
+  name: h1
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Wstęp
+- type: field_group
+  name: seo_section
+  label: Sekcja SEO
+  fields:
+  - type: text
+    name: title
+    label: Tytuł
+  - type: textarea
+    name: content
+    label: Treść
+pages:
+- de/rezensionen.md
+- es/resenas.md
+- fr/commentaires.md
+- it/recensioni.md
+- pl/recenzje.md
+- us/reviews.md

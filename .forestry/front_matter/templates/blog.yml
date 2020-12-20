@@ -1,0 +1,43 @@
+---
+label: Blog
+hide_body: true
+display_field: page_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: blog
+  hidden: true
+- type: text
+  name: page_name
+  label: Nazwa strony
+  description: Wyświetla się w nawigacjach i breadcrumbach
+- type: text
+  name: h1
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+- type: textarea
+  name: intro
+  label: Wstęp
+- type: field_group
+  name: seo_section
+  label: Sekcja SEO
+  fields:
+  - type: text
+    name: title
+    label: Tytuł
+  - type: textarea
+    name: content
+    label: Treść
+pages:
+- de/blog.md
+- es/blog.md
+- fr/blog.md
+- it/blog.md
+- pl/blog.md
+- us/blog.md

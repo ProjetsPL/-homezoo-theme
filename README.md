@@ -1,1 +1,1 @@
-# treehouse-theme
+# homezoo-theme

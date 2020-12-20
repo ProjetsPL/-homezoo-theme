@@ -1,0 +1,85 @@
+---
+label: Product [Lodowki]
+hide_body: true
+fields:
+- name: basics
+  type: include
+  config: {}
+  template: product
+  label: Basics
+  description: Podstawowe dane o produkcie
+- name: properties
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Typ
+    description: Typ lodówki
+  - name: product_size
+    type: text
+    config:
+      required: false
+    label: Rozmiar
+  - name: brand
+    type: text
+    config:
+      required: false
+    label: Marka
+  - name: noise_level
+    type: text
+    config:
+      required: false
+    label: Poziom hałasu
+  - name: capacity
+    type: text
+    config:
+      required: false
+    label: Pojemność całkowita
+  - name: energy_consumption
+    type: text
+    config:
+      required: false
+    label: Zużycie energii / rok
+  - name: height
+    type: text
+    config:
+      required: false
+    label: Wysokość
+  - name: width
+    type: text
+    config:
+      required: false
+    label: Szerokość
+  - name: freezer_capacity
+    type: text
+    config:
+      required: false
+    label: Pojemność zamrażarki
+  label: Właściwości
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości
+pages:
+- _products/pl/lodówki/Amica-BK2665.4-do-zabudowy-dwudrzwiowa.md
+- _products/pl/lodówki/Amica-FK239.3X-wolnostojaca-jednodrzwiowa.md
+- _products/pl/lodówki/Atlantic-Lodówka-turystyczna 30L-turystyczna-n/d.md
+- _products/pl/lodówki/Atlantic-Lodówka-turystyczna-30L-turystyczna-n-d.md
+- _products/pl/lodówki/BEKO- GN163130ZGB-wolnostojąca-dwudrzwiowa/BEKO-GN163130ZGB-wolnostojąca-dwudrzwiowa-Side-by-Side.md
+- _products/pl/lodówki/BEKO-GN163130ZGB-wolnostojaca-dwudrzwiowa-Side-by-Side.md
+- _products/pl/lodówki/BEKO-GNO5231XP-wolnostojaca-dwudrzwiowa-Side-by-Side.md
+- _products/pl/lodówki/BEKO-RCSA300K21W-wolnostojaca-dwudrzwiowa.md
+- _products/pl/lodówki/Bosch-KGE49AL41-wolnostojaca-dwudrzwiowa.md
+- _products/pl/lodówki/Bosch-KGV36KL32-wolnostojaca-dwudrzwiowa.md
+- _products/pl/lodówki/Bosch-KIV34X20-do-zabudowy-dwudrzwiowa.md
+- _products/pl/lodówki/Camry-Cr-8061-45-L-turystyczna-samochodowa.md
+- _products/pl/lodówki/Camry-Cr-93-32L-turystyczna-samochodowa.md
+- _products/pl/lodówki/Electrolux-ENN2801BOW-do-zabudowy-dwudrzwiowa.md
+- _products/pl/lodówki/Kamai-Turystyczna-Samochodowa-Przenosna-Standard-Cb-24-12V.md
+- _products/pl/lodówki/Samsung-Kitchen-Fit-RB33J8797S4-wolnostojaca-dwudrzwiowa.md
+- _products/pl/lodówki/Samsung-RB31FERNCSA-wolnostojaca.md
+- _products/pl/lodówki/Samsung-RB37J501MB1-wolnostojąca-dwudrzwiowa.md
+- _products/pl/lodówki/Samsung-RF56J9041SR-wolnostojaca-Side-by-Side.md
+- _products/pl/lodówki/Samsung-RS50N3913BC-z-kostkarką-dwudrzwiowa-Side-by-Side.md
+- _products/pl/lodówki/Samsung-RS50N3913BC-z-kostkarką-dwudrzwiowa/-Side-by-Side.md
+- _products/pl/lodówki/Whirlpool-SP40802EU-do-zabudowy-dwudrzwiowa.md

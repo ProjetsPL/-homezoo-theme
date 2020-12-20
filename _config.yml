@@ -5,11 +5,11 @@ logo: '/assets/img/logo.png'
 logo_svg: '/assets/img/logo.svg'
 icon: '/assets/img/01.png'
 
-scvarificationnumber: scvarificationnumber
-analyticsvarificationnumber: analyticsvarificationnumber
-gtagmanagervarificationnumber: GTM-WQTL795
-optimizevarificationnumber: optimizevarificationnumber 
-facebookpixelnumber: "748223282422521"
+# scvarificationnumber: scvarificationnumber
+# analyticsvarificationnumber: analyticsvarificationnumber
+# gtagmanagervarificationnumber: GTM-WQTL795
+# optimizevarificationnumber: optimizevarificationnumber 
+# facebookpixelnumber: "748223282422521"
 
 exclude:
   - config
@@ -372,6 +372,7 @@ i18n:
     leave_comment: "Zostaw komentarz"
     title: 'Zainspiruj się i stwórz z nami swój wymarzony dom! - Treehouse'
     home_and_garden: Dom i Ogród
+    pets: Zwierzęta domowe
     select_country: "Wybierz kraj"
     home_page: "Strona główna"
     blog_page: "Artykuły"
@@ -440,6 +441,7 @@ i18n:
     leave_comment: "Leave a comment"
     title: 'Get inspired and create your dream home with us! - Treehouse'
     home_and_garden: Home & Garden
+    pets: Pets
     select_country: "Select country"
     home_page: "Home page"
     blog_page: "Articles"
@@ -474,6 +476,7 @@ i18n:
     leave_comment: "Einen Kommentar hinterlassen"
     title: 'Lassen Sie sich inspirieren und schaffen Sie mit uns Ihr Traumhaus! - Treehouse'
     home_and_garden: Haus & Garten
+    pets: Haustiere
     select_country: "Land auswählen"
     home_page: "Startseite"
     blog_page: "Artikel"
@@ -510,6 +513,7 @@ i18n:
     leave_comment: "Deje un comentario"
     title: 'Inspírese y cree la casa de sus sueños con nosotros! - Treehouse'
     home_and_garden: Hogar y Jardín
+    pets: Mascotas
     select_country: "Seleccione el país"
     home_page: "Página de inicio"
     blog_page: "Artículos"
@@ -546,6 +550,7 @@ i18n:
     leave_comment: "Laissez un commentaire"
     title: 'Laissez-vous inspirer et créez la maison de vos rêves avec nous ! - Treehouse'
     home_and_garden: Maison et jardin
+    pets: Animaux domestiques
     select_country: "Sélectionnez un pays"
     home_page: "Page d'accueil"
     blog_page: "Articles"
@@ -582,6 +587,7 @@ i18n:
     leave_comment: "Lascia un commento"
     title: 'Lasciatevi ispirare e create la vostra casa dei sogni con noi! - Treehouse'
     home_and_garden: Casa e giardino
+    pets: Animali domestici
     select_country: "Seleziona il paese"
     home_page: "Pagina iniziale"
     blog_page: "Articoli"
@@ -618,6 +624,7 @@ i18n:
     leave_comment: "Leave a comment"
     title: 'Get inspired and create your dream home with us! - Treehouse'
     home_and_garden: Home & Garden
+    pets: Pets
     select_country: "Select country"
     home_page: "Home page"
     blog_page: "Articles"

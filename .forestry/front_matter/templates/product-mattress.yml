@@ -2,13 +2,6 @@
 label: Product [Materace]
 hide_body: true
 fields:
-- name: category
-  type: text
-  config:
-    required: false
-  label: Category
-  default: mattress
-  hidden: true
 - name: basics
   type: include
   config: {}
@@ -25,7 +18,7 @@ fields:
       required: true
     label: Typ
     description: Typ materaca
-  - name: size
+  - name: product_size
     type: text
     config:
       required: true
@@ -62,4 +55,29 @@ fields:
     type: boolean
     label: Uchwyty
   label: Właściwości
-  description: Właściwości produktu
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości
+pages:
+- _products/pl/materace/baby-comfort-materasso-piankowy-60-120.md
+- _products/pl/materace/breakdance-hilding-piankowy-80-200.md
+- _products/pl/materace/corato-fdm-piankowy-80-160.md
+- _products/pl/materace/dino-spij-zdrowo-kieszeniowy-80-160.md
+- _products/pl/materace/dobranocka-hilding-piankowy-60-120.md
+- _products/pl/materace/fdm-marina-lateksowy-200-200.md
+- _products/pl/materace/fikusny-sen-fiki-miki-piankowy-60-120.md
+- _products/pl/materace/hilding-conga-piankowy-200-200.md
+- _products/pl/materace/hilding-melody-lateksowy-120-200.md
+- _products/pl/materace/hilding-salsa-piankowy-200-200.md
+- _products/pl/materace/hilding-step-kieszeniowy-80-200.md
+- _products/pl/materace/junior-hevea-lateksowy-80-160.md
+- _products/pl/materace/junior-hevea-lateksowy-80-200.md
+- _products/pl/materace/kolo-texel-sprezynowy-140x200.md
+- _products/pl/materace/kolysanka-hilding-piankowy-60-120.md
+- _products/pl/materace/materasso-termopur-comfort-piankowy-120-200.md
+- _products/pl/materace/materasso-viscogreen-lux-piankowy-200-200.md
+- _products/pl/materace/optimum-syriusz-ps-piankowy-sprezynowy-120-200.md
+- _products/pl/materace/safety-smyk-hilding-piankowy-60-120.md
+- _products/pl/materace/sembella-cupido-piankowy-120-200.md
+- _products/pl/materace/sembella-samba-sprezynowy-200-200.md
+- _products/pl/materace/snudo-hevea-piankowy-80-160.md
+- _products/pl/materace/snudo-max-hevea-piankowy-80-160.md
+- _products/pl/materace/wenus-janpol-kieszeniowy-80-200.md

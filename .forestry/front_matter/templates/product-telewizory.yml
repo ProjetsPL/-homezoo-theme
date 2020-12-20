@@ -1,0 +1,77 @@
+---
+label: Product [Telewizory]
+hide_body: true
+fields:
+- name: basics
+  type: include
+  config: {}
+  template: product
+  label: Basics
+- name: properties
+  type: field_group
+  config: {}
+  fields:
+  - name: type
+    type: text
+    config:
+      required: false
+    label: Typ
+  - name: product_size
+    type: text
+    config:
+      required: false
+    label: Rozmiar
+  - name: brand
+    type: text
+    config:
+      required: false
+    label: Marka
+  - name: screen_type
+    type: text
+    config:
+      required: false
+    label: Rodzaj ekranu
+  - name: refresh_rate
+    type: text
+    config:
+      required: false
+    label: Częstotliwość odświeżania
+  - name: smart_tv
+    type: text
+    config:
+      required: false
+    label: Smart TV
+  - name: energy_class
+    type: text
+    config:
+      required: false
+    label: Klasa energetyczna
+  - name: resolution
+    type: text
+    config:
+      required: false
+    label: Rozdzielczość
+  - name: screen_resolution
+    type: text
+    config:
+      required: false
+    label: Rozdzielczość ekranu
+  label: Właściwości
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości
+pages:
+- _products/pl/telewizory/LG-55UM7400-LED-55.md
+- _products/pl/telewizory/LG-60UK6200-LED-60.md
+- _products/pl/telewizory/LG-OLED55CX3-OLED-55.md
+- _products/pl/telewizory/MANTA-55LUA69-LED-55.md
+- _products/pl/telewizory/Manta-50LUN120D-LED-50.md
+- _products/pl/telewizory/Manta-55LUA19S-LED-55.md
+- _products/pl/telewizory/PHILIPS-55PUS6704-LED-55.md
+- _products/pl/telewizory/Panasonic-TX-55GX550E-LED-55.md
+- _products/pl/telewizory/Philips-55OLED805-OLED-55.md
+- _products/pl/telewizory/Philips-55OLED854-OLED-55.md
+- _products/pl/telewizory/Philips-55PUS7855-LED-55.md
+- _products/pl/telewizory/Philips-55PUS8804-LED-55.md
+- _products/pl/telewizory/Samsung BE50T-H-LED-50.md
+- _products/pl/telewizory/Samsung-UE55NU7452-LED-55.md
+- _products/pl/telewizory/Samsung-UE55RU7372-LED-55.md
+- _products/pl/telewizory/Samsung-UE55TU7172-LED-55.md

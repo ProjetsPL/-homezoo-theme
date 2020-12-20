@@ -1,5 +1,5 @@
 ---
-label: Blog Post
+label: Post
 hide_body: false
 fields:
 - type: text
@@ -8,6 +8,11 @@ fields:
   config:
     required: true
   default: post
+  hidden: true
+- type: boolean
+  name: toc
+  label: Spis treści
+  default: true
   hidden: true
 - name: promoted
   type: boolean
@@ -33,15 +38,27 @@ fields:
   default: ''
 - type: text
   name: title
-  label: Meta title
+  label: Tytuł
   config:
     required: false
 - type: textarea
   name: description
-  label: Meta description
+  label: Opis (SEO)
   config:
     required: true
   default: ''
+- name: main_keywords
+  type: tag_list
+  default: []
+  label: Główne keywordy
+  description: Główne keywordy grupy
+- name: segmenting_tags
+  type: tag_list
+  default: []
+  label: Tagi segmentujące
+  description: Maksymalnie 6. Powinny składać się z jednego słowa (ew. kilku rozdzielonych
+    "-"). Po dodaniu trzeba przechwycić je w Facebooku Pixela lub innym narzędziu
+    do tworzenia grup odbiorców.
 - name: intro
   type: textarea
   default: ''
@@ -50,21 +67,15 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Intro
+  label: Wstęp
   description: Wstęp do artykułu
 - type: file
   name: image
   label: Główne zdjęcie
-- name: main_keywords
-  type: tag_list
-  default: []
-  label: Główne keywordy
-  description: Główne keywordy grupy
-- type: boolean
-  name: toc
-  label: Spis treści
-  default: true
-  hidden: true
+- name: use_related_products
+  type: boolean
+  label: Przypisz dokładne produkty
+  description: Aktywuj jeśli chcesz wybrać dokładne produkty produkty
 - name: related_products
   type: list
   config:
@@ -76,6 +87,135 @@ fields:
       section: produkty-pl
       file: 
   label: Powiązane produkty
+  showOnly:
+    field: use_related_products
+    value: true
+- name: products_quantity
+  type: number
+  label: 'ilość wyświetlanych produktów powiązanych '
+  default: 0
+  required: true
+  config:
+    min: 2
+    max: 
+    step: 
+  showOnly:
+    field: use_related_products
+  description: Jeśli wartość nie jest zdefiniowana wyświetli się 10 produktów
+- name: products_tags
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/tags.yml
+      path: tags
+  label: Tagi powiązanych produktów
+  showOnly:
+    field: use_related_products
+- name: products_category
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/categories.yml
+      path: categories
+  label: Kategorie powiązanych produktów
+  showOnly:
+    field: use_related_products
+- name: property
+  type: text
+  config:
+    required: false
+  label: Właściwość powiązanych produktów
+  description: properties.nazwa_właściwości
+  showOnly:
+    field: use_related_products
+    value: false
+- name: property_value
+  type: tag_list
+  default: []
+  label: Wartości dla właściwości powiązanych produktów
+  showOnly:
+    field: use_related_products
+- name: belongs_to_hub
+  type: boolean
+  label: Czy post jest przypisany do post hub'ów?
+- name: categories
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Huby do których przypisany jest post
+  description: 'Huby do których przypisany jest post. <br>Ważne: kolejność ma znaczenie,
+    na jej podstawie generowany jest permalink'
+  showOnly:
+    field: belongs_to_hub
+    value: true
+- name: is_hub
+  type: boolean
+  label: Czy post jest hub'em
+- name: hub_name
+  type: text
+  config:
+    required: false
+  label: Nazwa hub'a
+  showOnly:
+    field: is_hub
+    value: true
+  description: Musi być dokładnie taka sama jak nazwa tego pliku
+- name: post_list
+  type: field_group
+  config: {}
+  fields:
+  - name: list_main_title
+    type: text
+    config:
+      required: false
+    label: Tytuł
+  - name: categories
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Tytuł
+    - name: list
+      type: field_group_list
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Tytuł
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Lista
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Kategorie list
+  showOnly:
+    field: is_hub
+    value: true
+  label: Listy przypisanych postów
 pages:
 - _posts/de/2020-08-03-backsteinmauer-14-erstaunliche-entwurfe-die-sie-begeistern.md
 - _posts/de/2020-08-03-wie-belebt-man-die-weisse-kuche-7-interessante-ideen.md
@@ -85,6 +225,27 @@ pages:
 - _posts/de/2020-08-21-wunderschone-balkondekoration-10-beste-ideen-fur-kleine-balkone.md
 - _posts/de/2020-08-22-weihnachtsschmuck-10-weihnachtsdekorations-ideen.md
 - _posts/de/2020-08-23-wunderschone-tischdekorationen-zu-weihnachten-11-ideen-fur-weihnachtliche-tischdekorationen.md
+- _posts/de/2020-08-30-einweihungsgeschenk-10-brillante-geschenkideen-fur-die-einweihungsparty.md
+- _posts/de/2020-08-30-weihnachtsgeschenke-fur-mama-10-fantastische-geschenkideen.md
+- _posts/de/2020-08-31-weihnachtsgeschenke-fur-den-freund-9-atemberaubende-ideen.md
+- _posts/de/2020-08-31-weihnachtsgeschenke-fur-papa-7-entzuckende-geschenkideen.md
+- _posts/de/2020-09-06-weihnachtsgeschenkideen-fur-die-ehefrau-13-beste-weihnachtsgeschenke-fur-sie.md
+- _posts/de/2020-09-13-wie-reinigt-man-teppiche-selbst-beste-losungen-fur-schmutzige-teppiche.md
+- _posts/de/2020-09-18-hand-dampfreiniger-wie-wahle-ich-den-besten-dampfreiniger-aus.md
+- _posts/de/2020-09-18-inselkuchen-lernen-sie-wie-man-eine-fabelhafte-kuche-entwirft.md
+- _posts/de/2020-09-18-weihnachtsgeschenkideen-fur-oma-8-prachtige-geschenkideen.md
+- _posts/de/2020-09-25-wunderbares-pampasgras-lernen-sie-wie-man-das-pampasgras-pflegt.md
+- _posts/de/2020-09-26-wie-macht-man-wein-zu-hause-3-bewahrte-traubenwein-rezepte.md
+- _posts/de/2020-10-02-wie-reinigt-man-einen-verbrannten-topf-7-uberraschend-effektive-methoden.md
+- _posts/de/2020-10-04-bretter-fur-kuchenfussboden-erfahren-sie-warum-sie-es-in-betracht-ziehen-sollten.md
+- _posts/de/2020-10-16-3-ehrfurcht-einflossende-steinfliesen-ideen-fur-innenraume.md
+- _posts/de/2020-10-23-kostliches-weihnachtsessen-wahlen-sie-das-beste-weihnachtsessen.md
+- _posts/de/2020-10-25-wie-macht-man-handdesinfektionsmittel-zu-hause-heimwerker-handdesinfektionsmittel.md
+- _posts/de/2020-11-01-wie-schmuckt-man-einen-kurbis-fur-halloween-22-ideen-fur-halloween-kurbisse.md
+- _posts/de/2020-11-08-herbstdekorations-ideen-2020-die-10-interessantesten-bastelarbeiten-fur-den-herbst.md
+- _posts/de/2020-11-09-wie-man-ameisen-loswird-4-einfache-wege-zur-ameisenvernichtung.md
+- _posts/de/2020-11-15-wie-stellt-man-essiggurken-her-4-bewahrte-salzgurken-rezepte.md
+- _posts/de/2020-11-15-wie-wahlt-man-eine-klimaanlage-fur-die-wohnung-aus-vollstandiger-leitfaden.md
 - _posts/es/2020-08-03-como-animar-la-cocina-blanca-7-ideas-interesantes.md
 - _posts/es/2020-08-03-muro-de-ladrillo-14-increibles-disenos-que-te-encantaran.md
 - _posts/es/2020-08-07-pasillo-moderno-4-ideas-interesantes-para-un-pasillo.md
@@ -93,6 +254,27 @@ pages:
 - _posts/es/2020-08-22-adornos-de-navidad-10-ideas-de-decoracion-de-navidad.md
 - _posts/es/2020-08-22-hermosa-decoracion-de-balcon-10-mejores-ideas-para-pequenos-balcones.md
 - _posts/es/2020-08-23-hermosas-decoraciones-de-mesa-de-navidad.11-ideas-para-la-mesa-de-navidad.md
+- _posts/es/2020-08-30-regalos-para-la-inauguracion-de-la-casa-10-brillantes-ideas-de-regalos-para-la-fiesta-de-inauguracion-de-la-casa.md
+- _posts/es/2020-08-31-regalos-de-navidad-para-el-novio-9-ideas-impresionantes.md
+- _posts/es/2020-08-31-regalos-de-navidad-para-mama-10-fantasticas-ideas-de-regalos.md
+- _posts/es/2020-08-31-regalos-de-navidad-para-papa-7-deliciosas-ideas-para-regalos.md
+- _posts/es/2020-09-06-ideas-de-regalos-de-navidad-para-la-esposa-13-mejores-regalos-de-navidad-para-ella.md
+- _posts/es/2020-09-13-como-limpiar-la-alfombra-usted-mismo-las-mejores-soluciones-para-la-alfombra-sucia.md
+- _posts/es/2020-09-18-ideas-de-regalos-de-navidad-para-la-abuela-8-esplendidas-ideas-de-regalos.md
+- _posts/es/2020-09-18-ideas-para-isla-la-cocina-aprende-a-disenar-una-cocina-fabulosa.md
+- _posts/es/2020-09-18-limpiador-de-vapor-como-elegir-el-mejor-limpiador-a-vapor.md
+- _posts/es/2020-09-25-maravillosa-hierba-de-la-pampa-aprende-a-cuidar-la-hierba-de-la-pampa.md
+- _posts/es/2020-09-26-como-hacer-vino-en-casa-3-recetas-de-vino-de-uva-probadas.md
+- _posts/es/2020-10-02-como-limpiar-la-olla-quemada-7-metodos-sorprendentemente-eficaces.md
+- _posts/es/2020-10-04-juntas-para-el-suelo-de-la-cocina-aprende-por-que-deberias-considerarlo.md
+- _posts/es/2020-10-16-3-impresionantes-ideas-de-azulejos-de-piedra-para-el-interior-de-los-hogares.md
+- _posts/es/2020-10-23-deliciosa-cena-de-navidad-elija-la-mejor-comida-de-navidad.md
+- _posts/es/2020-10-25-como-hacer-un-desinfectante-de-manos-en-casa-desinfectante-de-manos-diy.md
+- _posts/es/2020-11-01-como-decorar-una-calabaza-para-halloween-22-ideas-para-la-calabaza-de-halloween.md
+- _posts/es/2020-11-08-ideas-para-decorar-el-otono-2020-las-10-artesanias-de-bricolaje-mas-interesantes-del-otono.md
+- _posts/es/2020-11-09-como-deshacerse-de-las-hormigas-en-la-casa-4-maneras-faciles-de-matar-hormigas.md
+- _posts/es/2020-11-15-como-elegir-el-aire-acondicionado-para-el-apartamento-guia-completa.md
+- _posts/es/2020-11-15-como-hacer-encurtidos-4-recetas-probadas-de-pepinos-en-escabeche.md
 - _posts/fr/2020-07-29-comment-animer-la-cuisine-blanche-7-idees-interessantes.md
 - _posts/fr/2020-08-03-mur-de-briques-14-dessins-etonnants-qui-vous-raviront.md
 - _posts/fr/2020-08-07-un-couloir-moderne-4-idees-interessantes-pour-un-couloir.md
@@ -101,6 +283,27 @@ pages:
 - _posts/fr/2020-08-22-belle-decoration-de-balcon-10-meilleures-idees-de-petits-balcons.md
 - _posts/fr/2020-08-22-decorations-de-noel-10-idees-de-decoration-de-noel.md
 - _posts/fr/2020-08-23-belles-decorations-de-table-de-noel-11-idees-de-table-de-noel.md
+- _posts/fr/2020-08-30-pendaison-de-cremaillere-10-brillantes-idees-de-cadeaux-pour-la-pendaison-de-cremaillere.md
+- _posts/fr/2020-08-31-cadeaux-de-noel-pour-le-petit-ami-9-idees-a-couper-le-souffle.md
+- _posts/fr/2020-08-31-cadeaux-de-noel-pour-maman-10-idees-de-cadeaux-fantastiques.md
+- _posts/fr/2020-08-31-cadeaux-de-noel-pour-papa-7-delicieuses-idees-de-cadeaux.md
+- _posts/fr/2020-09-06-idees-de-cadeaux-de-noel-pour-l-epouse-13-meilleurs-cadeaux-de-noel-pour-elle.md
+- _posts/fr/2020-09-13-comment-nettoyer-soi-meme-sa-moquette-les-meilleures-solutions-pour-les-tapis-sales.md
+- _posts/fr/2020-09-18-cuisine-avec-ilot-apprenez-a-concevoir-une-cuisine-fabuleuse.md
+- _posts/fr/2020-09-18-idees-de-cadeaux-de-noel-pour-grand-mere-8-magnifiques-idees-de-cadeaux.md
+- _posts/fr/2020-09-18-le-nettoyeur-a-vapeur-portatif-comment-choisir-le-meilleur-nettoyeur-vapeur.md
+- _posts/fr/2020-09-26-comment-faire-du-vin-chez-soi-3-recettes-eprouvees-de-vin-de-raisin.md
+- _posts/fr/2020-09-26-merveilleux-herbe-de-la-pampa-apprenez-a-prendre-soin-du-herbe-de-la-pampa.md
+- _posts/fr/2020-10-02-comment-nettoyer-un-pot-brule-7-des-methodes-etonnamment-efficaces.md
+- _posts/fr/2020-10-04-des-planches-pour-les-planchers-de-cuisine-decouvrez-pourquoi-vous-devriez-l-envisager.md
+- _posts/fr/2020-10-16-3-idees-etonnantes-de-carreaux-de-pierre-pour-linterieur.md
+- _posts/fr/2020-10-23-delicieux-diner-de-noel-choisissez-la-meilleure-nourriture-de-noel.md
+- _posts/fr/2020-10-25-comment-fabriquer-du-desinfectant-pour-les-mains-a-la-maison-desinfectant-pour-les-mains-a-usage-domestique.md
+- _posts/fr/2020-11-01-comment-decorer-une-citrouille-pour-halloween-22-idees-de-citrouilles-pour-halloween.md
+- _posts/fr/2020-11-09-comment-se-debarrasser-des-fourmis-dans-la-maison-4-moyens-faciles-de-tuer-les-fourmis.md
+- _posts/fr/2020-11-09-idees-de-decoration-d-automne-2020-les-10-bricolages-d-automne-les-plus-interessants.md
+- _posts/fr/2020-11-15-comment-choisir-un-climatiseur-pour-un-appartement-guide-complet.md
+- _posts/fr/2020-11-15-comment-faire-des-cornichons-4-recettes-eprouvees-de-concombres-marines.md
 - _posts/it/2020-07-29-muro-di-mattoni-14-fantastici-disegni-che-vi-delizieranno.md
 - _posts/it/2020-08-03-come-animare-la-cucina-bianca-7-idee-interessanti.md
 - _posts/it/2020-08-07-corridoio-moderno-4-idee-interessanti-per-un-corridoio.md
@@ -109,6 +312,27 @@ pages:
 - _posts/it/2020-08-22-bella-decorazione-del-balcone-10-migliori-idee-per-un-piccolo-balcone.md
 - _posts/it/2020-08-23-bellissime-decorazioni-per-la-tavola-di-natale-11-idee-per-la-tavola-di-natale.md
 - _posts/it/2020-08-23-ornamenti-di-natale-10-idee-di-decorazione-natalizia.md
+- _posts/it/2020-08-30-regali-per-la-casa-10-brillanti-idee-regalo-per-la-festa-di-inaugurazione-della-casa.md
+- _posts/it/2020-08-31-regali-di-natale-per-il-fidanzato-9-idee-mozzafiato.md
+- _posts/it/2020-08-31-regali-di-natale-per-la-mamma-10-fantastiche-idee-regalo.md
+- _posts/it/2020-08-31-regali-di-natale-per-papa-7-deliziose-idee-regalo.md
+- _posts/it/2020-09-06-idee-regalo-di-natale-per-la-moglie-13-migliori-regali-di-natale-per-lei.md
+- _posts/it/2020-09-13-come-si-pulitare-i-tappeto-le-migliori-soluzioni-per-la-moquette-sporca.md
+- _posts/it/2020-09-18-cucina-con-isola-imparare-a-progettare-una-cucina-favolosa.md
+- _posts/it/2020-09-18-idee-regalo-di-natale-per-la-nonna-8-splendide-idee-regalo.md
+- _posts/it/2020-09-18-vaporetto-portatile-come-scegliere-il-miglior-pulitore-a-vapore.md
+- _posts/it/2020-09-26-come-fare-il-vino-a-casa-3-ricette-provate-di-vino-all-uva.md
+- _posts/it/2020-09-26-meravigliosa-erba-della-pampas-imparare-a-prendersi-cura-dell-erba-della-pampa.md
+- _posts/it/2020-10-02-come-pulire-la-pentola-bruciata-7-metodi-sorprendentemente-efficaci.md
+- _posts/it/2020-10-04-schede-per-la-pavimentazione-della-cucina-scopri-perche-dovresti-prenderlo-in-considerazione.md
+- _posts/it/2020-10-23-3-fantastiche-idee-di-piastrelle-in-pietra-per-gli-interni-della-casa.md
+- _posts/it/2020-10-23-deliziosa-cena-di-natale-scegli-il-miglior-cibo-di-natale.md
+- _posts/it/2020-10-25-ome-fare-il-disinfettante-a-mano-a-casa-disinfettante-fai-da-te.md
+- _posts/it/2020-11-01-come-decorare-una-zucca-per-halloween-22-idee-di-zucca-per-halloween.md
+- _posts/it/2020-11-09-come-liberarsi-delle-formiche-in-casa-4-modi-facili-per-uccidere-le-formiche.md
+- _posts/it/2020-11-09-idee-per-la-decorazione-autunnale-2020-i-10-mestieri-piu-interessanti-del-fai-da-te-in-autunno.md
+- _posts/it/2020-11-15-come-fare-i-sottaceti-4-ricette-provate-di-cetrioli-sottaceto.md
+- _posts/it/2020-11-15-come-scegliere-l-aria-condizionata-per-l-appartamento-guida-completa.md
 - _posts/pl/2020-08-05-3-pomysly-na-kamien-dekoracyjny-w-domowych-wnetrzach.md
 - _posts/pl/2020-08-07-aranzacja-balkonu-10-najlepszych-rozwiazan-na-maly-balkon.md
 - _posts/pl/2020-08-08-kuchnia-z-wyspa-jak-sprytnie-urzadzic-funkcjonalna-kuchnie.md
@@ -116,8 +340,19 @@ pages:
 - _posts/pl/2020-08-14-jak-zrobic-wlasne-wino-z-winogron-3-sprawdzone-przepisy.md
 - _posts/pl/2020-08-14-ozdoby-swiateczne-10-pomyslow-na-dekoracje-bozonarodzeniowe.md
 - _posts/pl/2020-08-15-dekoracja-stolu-wigilijnego-11-pomyslow-na-stol-wigilijny.md
-- _posts/pl/2020-08-21-prezent-na-parapetowke-10-pomyslow-co-kupic-na-parapetowke.md
-- _posts/pl/potrawy-wigilijne-co-ugotowac-na-swieta-bozego-narodzenia.md
+- _posts/pl/2020-09-04-myjka-parowa-na-co-zwrocic-uwage-podczas-jej-wyboru.md
+- _posts/pl/2020-09-06-jak-wyprac-dywan-skuteczne-sposoby-na-czyszczenie-dywanow.md
+- _posts/pl/2020-09-08-potrawy-wigilijne-co-ugotowac-na-swieta-bozego-narodzenia.md
+- _posts/pl/2020-09-11-dla-babci-na-swieta.md
+- _posts/pl/2020-09-25-jak-wyczyscic-przypalony-garnek-7-skutecznych-metod.md
+- _posts/pl/2020-10-16-jak-samodzielnie-wykonac-plyn-do-dezynfekcji-prosty-przepis.md
+- _posts/pl/2020-10-24-jak-ozdobic-dynie-na-halloween-22-oryginalne-wzory-na-dynie.md
+- _posts/pl/2020-10-30-jesienne-dekoracje-2020-10-najciekawszych-pomyslow-diy.md
+- _posts/pl/2020-11-01-jak-kisic-ogorki-4-sprawdzone-przepisy-na-ogorki-kiszone.md
+- _posts/pl/2020-11-01-jak-pozbyc-sie-mrowek-z-domu-4-domowe-sposoby-na-mrowki.md
+- _posts/pl/2020-11-13-klimatyzator-do-mieszkania-sprawdz-jaki-model-wybrac.md
+- _posts/pl/2020-12-18-na-dzien-babci-i-dziadka.md
+- _posts/pl/2020-12-18-na-walentynki-dla-niej.md
 - _posts/us/2020-07-31-how-to-enliven-white-kitchen-7-interesting-ideas.md
 - _posts/us/2020-08-07-modern-hallway-4-interesting-ideas-for-a-hallway.md
 - _posts/us/2020-08-08-living-room-lighting-9-brilliant-ideas-for-living-room-lamps.md
@@ -125,3 +360,25 @@ pages:
 - _posts/us/2020-08-14-christmas-ornaments-10-christmas-decorating-ideas.md
 - _posts/us/2020-08-21-beautiful-balcony-decor-10-best-small-balcony-ideas.md
 - _posts/us/2020-08-21-beautiful-christmas-table-decorations.11-christmas-table-ideas.md
+- _posts/us/2020-08-28-for-housewarming-party.md
+- _posts/us/2020-08-28-for-mom-for-christmas.md
+- _posts/us/2020-08-31-for-boyfriend-for-christmas.md
+- _posts/us/2020-08-31-for-dad-for-christmas.md
+- _posts/us/2020-09-04-gift-ideas.md
+- _posts/us/2020-09-05-for-wife-for-christmas.md
+- _posts/us/2020-09-11-how-to-clean-carpet-yourself-best-solutions-for-dirty-carpet.md
+- _posts/us/2020-09-18-for-grandma-for-christmas.md
+- _posts/us/2020-09-18-handheld-steamer-how-to-choose-the-best-steam-cleaner.md
+- _posts/us/2020-09-18-kitchen-island-ideas-learn-how-to-design-a-fabulous-kitchen.md
+- _posts/us/2020-09-25-how-to-make-wine-at-home-3-proven-grape-wine-recipes.md
+- _posts/us/2020-09-25-wonderful-pampas-grass-learn-how-to-care-for-pampas-grass.md
+- _posts/us/2020-10-02-how-to-clean-burnt-pot-7-surprisingly-effective-methods.md
+- _posts/us/2020-10-04-boards-for-kitchen-flooring-learn-why-you-should-consider-it.md
+- _posts/us/2020-10-16-3-awe-inspiring-stone-tile-ideas-for-home-interiors.md
+- _posts/us/2020-10-23-delicious-christmas-dinner-choose-the-best-christmas-food.md
+- _posts/us/2020-10-25-how-to-make-hand-sanitizer-at-home-diy-hand-sanitizer.md
+- _posts/us/2020-10-28-how-to-decorate-a-pumpkin-for-halloween-22-halloween-pumpkin-ideas.md
+- _posts/us/2020-11-06-how-to-get-rid-of-ants-in-house-4-easy-ways-to-kill-ants.md
+- _posts/us/2020-11-08-fall-decorating-ideas-2020-10-most-interesting-diy-fall-crafts.md
+- _posts/us/2020-11-15-how-to-choose-air-conditioner-for-apartment-complete-guide.md
+- _posts/us/2020-11-15-how-to-make-pickles-4-proven-homemade-pickles-recipes.md

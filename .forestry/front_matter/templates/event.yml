@@ -1,0 +1,73 @@
+---
+label: Event
+hide_body: false
+display_field: working_name
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: event
+  hidden: true
+- type: boolean
+  name: promoted
+  label: Promowany
+- name: working_name
+  type: text
+  config:
+    required: false
+  label: Robocza nazwa wydarzenia
+  description: RRRR/MM/DD - Nazwa wydarzenia
+  hidden: false
+- type: datetime
+  name: event_date
+  label: Data wydarzenia
+- name: h1
+  type: text
+  config:
+    required: false
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+- type: textarea
+  name: intro
+  label: Wstęp
+- type: text
+  name: localization
+  label: Lokalizacja
+  description: Sama nazwa miasta
+  config:
+    required: true
+- type: file
+  name: image
+  label: Główna grafika
+- type: field_group
+  name: organizer
+  label: Organizator
+  fields:
+  - type: text
+    name: name
+    label: Nazwa
+  - type: file
+    name: logo
+    label: Logo
+- type: field_group
+  name: details
+  label: Szczegóły wydarzenia
+  fields:
+  - type: field_group_list
+    name: desc
+    label: Lista szczegółów
+    fields:
+    - type: text
+      name: label
+      label: Label
+    - type: datetime
+      name: value
+      label: Wartość
+    - type: text
+      name: link
+      label: Link

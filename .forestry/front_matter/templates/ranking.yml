@@ -9,22 +9,23 @@ fields:
   default: ranking
   config:
     required: true
-- name: h1
+  hidden: true
+- name: is_hub
+  type: boolean
+  label: Czy to ranking główny?
+  description: Czy jest to główny ranking?
+  hidden: false
+- name: toc
+  type: boolean
+  label: toc
+  hidden: true
+  default: true
+- name: hub_name
   type: text
   config:
     required: true
-  label: H1
-- type: text
-  name: title
-  label: Meta title
-  config:
-    required: true
-- type: textarea
-  name: description
-  label: Meta description
-  config:
-    required: true
-  default: ''
+  label: Nazwa ranking-hub'a
+  description: Wprowadź nazwę ranking-hub'a do którego przypisany jest ranking
 - type: datetime
   name: date
   label: Data publikacji
@@ -43,6 +44,34 @@ fields:
     display_utc: false
     export_format: YYYY-MM-DD
   default: ''
+- name: h1
+  type: text
+  config:
+    required: true
+  label: Tytuł
+- type: text
+  name: title
+  label: Tytuł (SEO)
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Opis (SEO)
+  config:
+    required: true
+  default: ''
+- name: main_keywords
+  type: tag_list
+  default: []
+  label: Główne keywordy
+  description: Główne keywordy grupy
+- name: segmenting_tags
+  type: tag_list
+  default: []
+  label: Tagi segmentujące
+  description: Maksymalnie 6. Powinny składać się z jednego słowa (ew. kilku rozdzielonych
+    "-"). Po dodaniu trzeba przechwycić je w Facebooku Pixela lub innym narzędziu
+    do tworzenia grup odbiorców.
 - name: intro
   type: textarea
   default: ''
@@ -53,36 +82,93 @@ fields:
       format: markdown
   label: Intro
   description: Wstęp do artykułu
-- name: guide
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Poradnik
 - name: image
   type: file
   config:
     maxSize: 64
   label: Główne zdjęcie
-- name: main_keywords
-  type: tag_list
-  default: []
-  label: Główne keywordy
-  description: Główne keywordy grupy
-- name: is_hub
-  type: boolean
-  label: Czy to ranking główny?
-  description: Czy jest to główny ranking?
-- name: hub_name
+- name: ranking_list_title
   type: text
   config:
-    required: true
-  label: Nazwa rankingu głównego
-- name: toc
-  type: boolean
-  label: toc
-  hidden: true
-  default: true
+    required: false
+  label: Tytuł listy produktów
+- name: product_context
+  type: text
+  config:
+    required: false
+  label: Kontekst dla produktów
+  description: Pojawia się na końcu nazwy każdego produktu
+- name: products_category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/categories.yml
+      path: categories
+  label: Kategoria wyświetlanych produktów
+- name: property
+  type: text
+  config:
+    required: false
+  label: Właściwość wyświetlanych produktów
+  description: properties.nazwa_właściwości
+- name: property_value
+  type: tag_list
+  default: []
+  label: Wartości dla właściwości wyświetlanych produktów
+pages:
+- pl/recenzje/najlepsze-lodowki/beko.md
+- pl/recenzje/najlepsze-lodowki/beko.md
+- pl/recenzje/najlepsze-lodowki/bosch.md
+- pl/recenzje/najlepsze-lodowki/bosch.md
+- pl/recenzje/najlepsze-lodowki/do-zabudowy.md
+- pl/recenzje/najlepsze-lodowki/do-zabudowy.md
+- pl/recenzje/najlepsze-lodowki/samochodowe.md
+- pl/recenzje/najlepsze-lodowki/samochodowe.md
+- pl/recenzje/najlepsze-lodowki/samsung.md
+- pl/recenzje/najlepsze-lodowki/samsung.md
+- pl/recenzje/najlepsze-lodowki/side-by-side.md
+- pl/recenzje/najlepsze-lodowki/side-by-side.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/philips.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/philips.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/samsung.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/samsung.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/sharp.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/sharp.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/xiaomi.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/xiaomi.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/z-nawilzaczem.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza/z-nawilzaczem.md
+- pl/recenzje/najlepsze-odkurzacze/bezprzewodowe.md
+- pl/recenzje/najlepsze-odkurzacze/bezworkowe.md
+- pl/recenzje/najlepsze-odkurzacze/dyson.md
+- pl/recenzje/najlepsze-odkurzacze/electrolux.md
+- pl/recenzje/najlepsze-odkurzacze/karcher.md
+- pl/recenzje/najlepsze-odkurzacze/pionowe.md
+- pl/recenzje/najlepsze-odkurzacze/piorace.md
+- pl/recenzje/najlepsze-odkurzacze/przemyslowe.md
+- pl/recenzje/najlepsze-odkurzacze/reczne.md
+- pl/recenzje/najlepsze-odkurzacze/roomba.md
+- pl/recenzje/najlepsze-odkurzacze/samojezdne.md
+- pl/recenzje/najlepsze-odkurzacze/xiaomi.md
+- pl/recenzje/najlepsze-odkurzacze/zelmer.md
+- pl/recenzje/najlepsze-telewizory/4K.md
+- pl/recenzje/najlepsze-telewizory/50-cali.md
+- pl/recenzje/najlepsze-telewizory/50-cali.md
+- pl/recenzje/najlepsze-telewizory/55-cali.md
+- pl/recenzje/najlepsze-telewizory/55-cali.md
+- pl/recenzje/najlepsze-telewizory/60-cali.md
+- pl/recenzje/najlepsze-telewizory/60-cali.md
+- pl/recenzje/najlepsze-telewizory/LG.md
+- pl/recenzje/najlepsze-telewizory/oled.md
+- pl/recenzje/najlepsze-telewizory/oled.md
+- pl/recenzje/najlepsze-telewizory/philips.md
+- pl/recenzje/najlepsze-telewizory/philips.md
+- pl/recenzje/najlepsze-telewizory/samsung.md
+- pl/recenzje/najlepsze-telewizory/samsung.md
+- pl/recenzje/najlepsze-telewizory/smart-tv.md
+- pl/recenzje/najlepsze-telewizory/smart-tv.md

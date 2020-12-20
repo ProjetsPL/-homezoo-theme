@@ -2,13 +2,6 @@
 label: Product [Ekspresy do kawy]
 hide_body: true
 fields:
-- name: category
-  type: text
-  config:
-    required: false
-  label: Kategoria
-  hidden: true
-  default: ekspresy-do-kawy
 - name: basics
   type: include
   config: {}
@@ -66,4 +59,4 @@ fields:
       required: false
     label: Gwarancja
   label: Właściwości
-  description: Właściwości produktu
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości

@@ -1,0 +1,9 @@
+---
+label: Categories
+hide_body: true
+fields:
+- type: list
+  name: categories
+  label: Kategorie
+pages:
+- _data/categories.yml

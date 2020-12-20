@@ -2,13 +2,6 @@
 label: Product [Patelnie]
 hide_body: true
 fields:
-- name: category
-  type: text
-  config:
-    required: false
-  label: Kategoria
-  hidden: true
-  default: patelnie
 - name: basics
   type: include
   config: {}
@@ -34,7 +27,7 @@ fields:
     config:
       required: false
     label: Marka
-  - name: size
+  - name: product_size
     type: text
     config:
       required: false
@@ -65,4 +58,4 @@ fields:
       required: false
     label: Kolor
   label: Właściwości
-  description: Właściwości produktu
+  description: Użyj ", " aby dodać kilka wartości dla jednej właściwości

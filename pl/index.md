@@ -5,7 +5,7 @@ title:  Zainspiruj się i stwórz z nami swój wymarzony dom! - Treehouse
 description: TreeHouse to miejsce, w którym znajdziesz wskazówki dotyczące domu i ogrodu. Zainspiruj się się pomysłami i znajdź produkty odpowiadające Twoim oczekiwaniom.
 h1: Zainspiruj się i stwórz z nami swój wymarzony dom!
 recent_articles: true
-recent_rankings: true
+recent_rankings: false
 first_seo_section:
     title: Zainspiruj się najnowszymi trendami
     content: |-

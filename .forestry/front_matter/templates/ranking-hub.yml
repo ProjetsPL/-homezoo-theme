@@ -1,0 +1,175 @@
+---
+label: Ranking-hub
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: ranking-hub
+  config:
+    required: true
+  hidden: true
+- name: is_hub
+  type: boolean
+  label: Czy to ranking główny?
+  description: Czy jest to główny ranking?
+  hidden: true
+  default: true
+- name: toc
+  type: boolean
+  label: toc
+  hidden: true
+  default: true
+- name: hub_name
+  type: text
+  config:
+    required: true
+    min: 
+  label: Nazwa ranking-hub'a
+  description: Nazwa musi być taka sama jak nazwa pliku.
+- type: datetime
+  name: date
+  label: Data publikacji
+  default: now
+  config:
+    required: true
+    export_format: YYYY-MM-DD
+- name: update_date
+  type: datetime
+  label: Data aktualizacji
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD
+  default: ''
+- name: h1
+  type: text
+  config:
+    required: true
+  label: Tytuł
+- type: text
+  name: title
+  config:
+    required: true
+  label: Tytuł (SEO)
+- type: textarea
+  name: description
+  label: Opis (SEO)
+  config:
+    required: true
+  default: ''
+- name: main_keywords
+  type: tag_list
+  default: []
+  label: Główne keywordy
+  description: Główne keywordy grupy
+- name: segmenting_tags
+  type: tag_list
+  default: []
+  description: Maksymalnie 6. Powinny składać się z jednego słowa (ew. kilku rozdzielonych
+    "-"). Po dodaniu trzeba przechwycić je w Facebooku Pixela lub innym narzędziu
+    do tworzenia grup odbiorców.
+  label: Tagi segmentujące
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: Wstęp do artykułu
+  label: Wstęp
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Główne zdjęcie
+- name: products_category
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: _data-6f5bf630-8db2-41db-bf30-908776afd041
+      file: _data/categories.yml
+      path: categories
+  label: Kategoria wyświetlanych produktów
+- name: rankings_list
+  type: field_group
+  config: {}
+  fields:
+  - name: list_main_title
+    type: text
+    config:
+      required: false
+    label: Tytuł
+  - name: intro
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Intro
+  - name: categories
+    type: field_group_list
+    fields:
+    - name: title
+      type: text
+      config:
+        required: false
+      label: Tytuł
+    - name: icon
+      type: text
+      config:
+        required: false
+      label: Ikona
+      description: 'Dostępne: type, producent, size'
+    - name: list
+      type: field_group_list
+      fields:
+      - name: title
+        type: text
+        config:
+          required: false
+        label: Tytuł
+      - name: link
+        type: text
+        config:
+          required: false
+        label: Link
+      config:
+        min: 
+        max: 
+        labelField: 
+      label: Lista rankingów
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Kategorie rankingów
+  label: Rankingi
+pages:
+- pl/recenzje/najlepsze-ekspresy-do-kawy.md
+- pl/recenzje/najlepsze-ekspresy-do-kawy.md
+- pl/recenzje/najlepsze-lodowki.md
+- pl/recenzje/najlepsze-lodowki.md
+- pl/recenzje/najlepsze-materace.md
+- pl/recenzje/najlepsze-materace.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza.md
+- pl/recenzje/najlepsze-oczyszczacze-powietrza.md
+- pl/recenzje/najlepsze-odkurzacze.md
+- pl/recenzje/najlepsze-patelnie.md
+- pl/recenzje/najlepsze-patelnie.md
+- pl/recenzje/najlepsze-pralki.md
+- pl/recenzje/najlepsze-pralki.md
+- pl/recenzje/najlepsze-telewizory.md
+- pl/recenzje/najlepsze-telewizory.md
