@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- goadtag -->
 
   {% if page.lang == "pl" %}
   <div id="fb-root"></div>
@@ -21,7 +21,7 @@
   <main class="page page-article">
 
     {% include breadcrumbs.html %}
-    
+
     <div class="beams-wrapper  global-beam-wrapper article-content">
       <article class="beam b-size-5">
         <div class="beam-item b-size-3 article-text">
@@ -33,7 +33,7 @@
             <h1>{{ page.title }}</h1>
 
             <p>{{ page.intro }}</p>
-          
+
             {% if page.is_hub%}
               <nav class="posts-nav">
                 <ul class="posts-nav-lvl-1">
@@ -62,15 +62,7 @@
             </figure>
           </header>
 
-          <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-format="fluid"
-              data-ad-layout-key="-dx+59+ez-g3-g4"
-              data-ad-client="ca-pub-2667869260064660"
-              data-ad-slot="4714133490"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          <!-- goad -->
 
           <div class="flex-wrapper  nowrap">
               <div class="flex-container">
@@ -87,30 +79,22 @@
                  {% endfor %}
                  {% assign i = i | plus: 1 %}
                {% endfor %}
-             
+
               </div>
           </div>
 
           {{ content | inject_anchors | inject_ads }}
-         
+
             <!-- {% assign posts_belongs_to_hub = site.posts | where: "belongs_to_hub", true | where: "lang", page.lang %}
             {% for post in posts_belongs_to_hub %}
               {% for item in post.categories %}
-                {% if item == page.hub_name %}   
+                {% if item == page.hub_name %}
                   <a href="{{post.url}}"> {{post.title}}</a><br>
                 {% endif %}
               {% endfor %}
             {% endfor %} -->
 
-          <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-format="fluid"
-              data-ad-layout-key="-dx+59+ez-g3-g4"
-              data-ad-client="ca-pub-2667869260064660"
-              data-ad-slot="4714133490"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          <!-- goad -->
 
           <footer class="article-footer">
             <section class="publication-author">
@@ -202,7 +186,7 @@
                     {% assign i = i | plus: 1 %}
                 {% endfor %}
                 <!-- creating array of products with matching category -->
-                {% assign products_collection = '' | split: ',' %}        
+                {% assign products_collection = '' | split: ',' %}
                 {% for item in products_path_array %}
                     {% assign found_product = site.products | where: "path" , item %}
                     {% assign products_collection = products_collection  | concat: found_product %}
@@ -210,9 +194,9 @@
 
             {% else %}
 
-                {% if  page.products_category.size > 0  %}                   
+                {% if  page.products_category.size > 0  %}
 
-                    {% assign products_path_array = '' | split: ',' %}        
+                    {% assign products_path_array = '' | split: ',' %}
                     {% for post_category in page.products_category  %}
                         {% for product in products_collection %}
                             {% for product_category in product.category  %}
@@ -222,99 +206,99 @@
                                 {% endif %}
                             {% endfor%}
                         {% endfor %}
-                    {% endfor %}                    
+                    {% endfor %}
                     {% assign products_path_array = products_path_array | uniq %}
                     <!-- creating array of products with matching category -->
-                    {% assign products_collection = '' | split: ',' %}        
+                    {% assign products_collection = '' | split: ',' %}
                     {% for item in products_path_array %}
                         {% assign found_product = site.products | where: "path" , item %}
                         {% assign products_collection = products_collection  | concat: found_product %}
                     {% endfor %}
-                    <!-- Po przefiltrowaniu kategorii:  {{products_collection.size}}<br> -->  
+                    <!-- Po przefiltrowaniu kategorii:  {{products_collection.size}}<br> -->
 
                 {% endif %}
-                {% if  page.products_tags.size > 0  %}                       
-                    
-                    {% assign products_path_array = '' | split: ',' %}        
+                {% if  page.products_tags.size > 0  %}
+
+                    {% assign products_path_array = '' | split: ',' %}
                     {% for post_tag in page.products_tags  %}
                         {% for product in products_collection %}
-                            {% for product_tag in product.tags %}                      
+                            {% for product_tag in product.tags %}
                                 {% if product_tag == post_tag %}
                                     {% assign path_handle = product.path  | split: ',' %}
                                     {% assign products_path_array = products_path_array | concat: path_handle %}
                                 {% endif %}
                             {% endfor%}
                         {% endfor %}
-                    {% endfor %}                   
+                    {% endfor %}
                     {% assign products_path_array = products_path_array | uniq %}
                     <!-- creating array of products with matching tags -->
-                    {% assign products_collection = '' | split: ',' %}        
+                    {% assign products_collection = '' | split: ',' %}
                     {% for item in products_path_array %}
                         {% assign found_product = site.products | where: "path" , item %}
                         {% assign products_collection = products_collection  | concat: found_product %}
                     {% endfor %}
-                    <!-- Po przefiltrowaniu tagów:  {{products_collection.size}}<br> -->        
+                    <!-- Po przefiltrowaniu tagów:  {{products_collection.size}}<br> -->
 
                 {% endif %}
-                {% if  page.property and page.property_value  %}       
+                {% if  page.property and page.property_value  %}
 
                     {% assign products_path_array = '' | split: ',' %}
-                    {% assign property_name =  page.property | remove: "properties."%}           
+                    {% assign property_name =  page.property | remove: "properties."%}
                     {% for item in page.property_value  %}
                         {%assign post_value = item | downcase %}
-                        {% for product in products_collection %}        
-                            {% for property in product.properties %}                                
-                                    {% if property[0] ==  property_name %}     
-                                        {%assign matching_property_values = property[1] | downcase | split: ", " %}     
+                        {% for product in products_collection %}
+                            {% for property in product.properties %}
+                                    {% if property[0] ==  property_name %}
+                                        {%assign matching_property_values = property[1] | downcase | split: ", " %}
                                         {% for value  in matching_property_values %}
                                             {% if value == post_value %}
                                                 {% assign path_handle = product.path  | split: ',' %}
                                                 {% assign products_path_array = products_path_array | concat: path_handle %}
                                             {%endif%}
-                                        {% endfor %}            
+                                        {% endfor %}
                                     {%endif%}
-                            {% endfor %}           
+                            {% endfor %}
                         {% endfor %}
                     {%endfor%}
                     {% assign products_path_array = products_path_array | uniq %}
                     <!-- creating array of products with matching property -->
-                    {% assign products_collection = '' | split: ',' %}        
+                    {% assign products_collection = '' | split: ',' %}
                     {% for item in products_path_array %}
                         {% assign found_product = site.products | where: "path" , item %}
                         {% assign products_collection = products_collection  | concat: found_product %}
                     {% endfor %}
-                    <!-- Po przefiltrowaniu właściwości:  {{products_collection.size}}<br> -->   
+                    <!-- Po przefiltrowaniu właściwości:  {{products_collection.size}}<br> -->
 
-                {%endif%}  
+                {%endif%}
 
             {%endif%}
 
-            <!-- End - Related products  - Filter -->                
+            <!-- End - Related products  - Filter -->
 
-            <!-- Related products - display -->       
+            <!-- Related products - display -->
 
             {% if page.use_related_products %}
-                {% assign products_quantity = related_products.size %}          
+                {% assign products_quantity = related_products.size %}
             {% elsif page.products_quantity %}
-                {% assign products_quantity = page.products_quantity %}          
-            {% else %} 
+                {% assign products_quantity = page.products_quantity %}
+            {% else %}
                 {% assign products_quantity = 5 %}
             {%endif%}
 
             {% assign products_collection_quantity =  products_collection.size %}
-                   
+
             {% if products_collection_quantity < products_quantity %}
 
-                {% assign rest_products_quantity =  products_quantity | minus: products_collection_quantity %}       
+                {% assign rest_products_quantity =  products_quantity | minus: products_collection_quantity %}
                 {% assign mixed_products_quantity = products_with_lang.size %}
-                {% assign mixed_products = products_with_lang | sample: mixed_products_quantity  %}  
+                {% assign mixed_products = products_with_lang | sample: mixed_products_quantity  %}
 
                 {%  for i in (1..rest_products_quantity) %}
                     {% assign additional_product_path = mixed_products[i].path  %}
                     {% assign found_product = site.products | where: "path" , additional_product_path %}
                     {% assign products_collection = products_collection  | concat: found_product %}
                 {%endfor%}
-            
+
             {% endif %}
 
             {% assign mixed_products_collection = products_collection | sample: products_quantity%}
@@ -324,7 +308,7 @@
                         {% include parts/product-listing-boxitem-md.html product=item %}
                     </div>
                 </aside>
-            {%endfor%}     
+            {%endfor%}
 
             <!-- End - Related products - display -->
 
@@ -361,7 +345,7 @@
               <a href="{{ article.url | prepend: site.baseurl }}" class="btn btn-sm btn-link">{{ main_keywords }}</a>
             {% endif %}
           {% endfor %}
-          
+
           {% assign random_product_listing = site.products_listings | where:"lang", page.lang | sample: 2 %}
           {% for product_listing in random_product_listing %}
             {% assign main_keywords = product_listing.main_keywords | sample: 1 %}
@@ -378,7 +362,7 @@
 
   {% include stickby-sidebar.html %}
   {% include stickby-element.html %}
-  
+
 
 
   {% include all_pages_footer.html %}

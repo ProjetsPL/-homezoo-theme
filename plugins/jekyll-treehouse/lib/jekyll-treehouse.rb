@@ -24,4 +24,4 @@ Liquid::Template.register_tag('fig', Jekyll::Treehouse::FigBlock)
 Liquid::Template.register_tag('figCaption', Jekyll::Treehouse::FigCaptionBlock)
 Liquid::Template.register_tag('treehouseseo', Jekyll::Treehouse::SeoTag)
 
-Liquid::Template.register_filter(Jekyll::Treehouse::Ads)
+# Liquid::Template.register_filter(Jekyll::Treehouse::Ads)

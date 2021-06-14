@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- goadtag -->
 
   {% include header.html %}
 
@@ -74,20 +74,11 @@
                     </figure>
                     {{ page.intro | markdownify }}
 
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-format="fluid"
-                        data-ad-layout-key="-dx+59+ez-g3-g4"
-                        data-ad-client="ca-pub-2667869260064660"
-                        data-ad-slot="7616548873"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-
+                    <!-- goad -->
                 </div>
                 <div class="beam-item b-size-2 beam-rail  review-sidebar">
                     <div class="beam-rail-item r-height-100">
-                        <div class="sticky-element">                            
+                        <div class="sticky-element">
                         {% if products.size > 1 %}
                             {% include parts/product-listing-boxitem-md.html product=main_product context=page.product_context %}
                         {%endif%}
@@ -118,15 +109,7 @@
             <div class="beam-item b-size-3 review-text">
                 {{ content | markdownify | inject_anchors }}
 
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-format="fluid"
-                data-ad-layout-key="-dx+59+ez-g3-g4"
-                data-ad-client="ca-pub-2667869260064660"
-                data-ad-slot="7616548873"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+            <!-- goad -->
 
             </div>
             <div class="beam-item b-size-2 beam-rail  review-sidebar">
@@ -136,15 +119,7 @@
                             <span class="title">{{site.i18n[page.lang].toc}}</span>
                             {{ content | markdownify | toc_only }}
                         </nav>
-                        <ins class="adsbygoogle"
-                                style="display:block"
-                                data-ad-format="fluid"
-                                data-ad-layout-key="-5z+cf+50+b-4r"
-                                data-ad-client="ca-pub-2667869260064660"
-                                data-ad-slot="7026996710"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
+                        <!-- goad -->
                     </div>
                 </div>
             </div>

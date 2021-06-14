@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- goadtag -->
 
   {% if page.lang == "pl" %}
   <div id="fb-root"></div>
@@ -26,7 +26,7 @@
             <div class="beam-item b-size-3 event-text">
                     <header class="event-header">
                         <h1>{{ page.h1 }}</h1>
-                        {{ page.intro }}            
+                        {{ page.intro }}
                         <figure>
                           {% if page.image %}
                           <img src='{{site.baseurl}}{{page.image}}' alt='{{ page.title | escape }}'></img>
@@ -45,20 +45,20 @@
                               {% if events[i] != page %}
                                {% continue %}
                               {% endif %}
-                
+
                               {% assign prev_index = i | minus: 1 %}
                               {% assign prev_event = events[prev_index] %}
-                
+
                               {% assign last_index = events.size | minus: 1 %}
-                
+
                               {% if i == last_index %}
                                 {% assign next_index = 0 %}
                               {% else %}
                                 {% assign next_index = i | plus: 1 %}
                               {% endif %}
-                
+
                               {% assign next_event = events[next_index] %}
-                
+
                               {% break %}
                             {% endfor %}
 
@@ -69,7 +69,7 @@
                               <img class="arrow" src="/assets/img/more-arrow-md.svg" alt="Przeczytaj więcej">
                             </a>
                           {% endif %}
-            
+
                           {% if next_event.url and next_event.lang == page.lang %}
                             <a href="{{ next_event.url | prepend: site.baseurl }}" class="next">
                               <span class="label">{{next_event.event_date}}</span>
@@ -84,7 +84,7 @@
             <div class="beam-item beam-rail b-size-2 event-sidebar">
               <div class="beam-rail-item rail-sidebar r-height-auto">
                 <div class="sticky-sidebar">
-                  <section class=" details">                        
+                  <section class=" details">
                       <div class="img-box">
                           <img class="img" src="{{page.organizer.logo}}" alt="{{page.organizer.name}}">
                       </div>
@@ -102,8 +102,8 @@
               </div>
             </div>
         </article>
-        
-        
+
+
         <section class="beam  b-size-4 featured-articles">
             <header class="beam-item b-size-4">
                 <p class="h-section">{{site.i18n[page.lang].promoted_articles}}</p>
