@@ -33,7 +33,20 @@
                             <h1 class="h-section">{{page.h1}}</h1>
                             <p>{{page.intro}}</p>
                         </div>
-                        {% assign random_products = site.products | where: "lang", page.lang | where: "category", page.products_category | sample: 30 %}
+
+                        {% assign products_with_lang = site.products | where: "lang" , page.lang %}
+                        {% assign products_collection = products_with_lang%}
+
+                        {% for product_item in products_collection %}
+                          {% for product_destiny in product_item.properties.destiny %}
+                            {% if product_destiny == page.destiny %}
+                                  {% assign found_product = site.products | where: "path" , product_item.path %}
+                                  {% assign products_destiny = products_destiny  | concat: found_product %}                                
+                            {% endif %}
+                          {% endfor %}
+                        {% endfor %}
+
+                        {% assign random_products = products_destiny | where: "category", page.products_category | sample: 30 %}
                         <div class="beam-item index-products">
                             <div class="flex-wrapper">
                               <ul class="flex-container">

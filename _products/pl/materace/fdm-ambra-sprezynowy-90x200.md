@@ -45,6 +45,9 @@ properties:
   case: do wyboru
   bilateral: false
   handles: false
+  destiny:
+  - Dla psa
+  - Dla kota
 distinction: 'premium'
 
 #new

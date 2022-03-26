@@ -27,6 +27,10 @@ links:
 properties:
   type: zewnętrzna
   color: Antracyt
+  destiny:
+  - Dla psa
+  - Dla kota
+  
 
 #new
 tags:

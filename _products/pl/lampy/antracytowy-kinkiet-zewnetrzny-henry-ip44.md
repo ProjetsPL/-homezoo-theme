@@ -24,6 +24,9 @@ links:
 properties:
   color: zielonY, Antracyt
   type: podwieszana
+  destiny:
+  - Dla psa
+  - Dla kota
 
 #new
 tags:

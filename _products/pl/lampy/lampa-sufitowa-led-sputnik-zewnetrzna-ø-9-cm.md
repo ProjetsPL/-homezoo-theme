@@ -23,6 +23,9 @@ links:
 properties:
   type: podwieszana
   color: szary
+  destiny:
+  - Dla psa
+  - Dla kota
 
 tags:
   - wesele

@@ -7,6 +7,7 @@ canonical: false
 canonical_url:
 page_name: Lampy
 product_context: Lampa
+destiny: Dla psa
 title: Lampy
 description: TreeHouse to miejsce, w którym znajdziesz wskazówki dotyczące domu i ogrodu. Zainspiruj się się pomysłami i znajdź produkty odpowiadające Twoim oczekiwaniom.
 h1: Lampy

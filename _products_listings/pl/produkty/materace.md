@@ -7,6 +7,7 @@ canonical: false
 canonical_url:
 page_name: Materace
 product_context: Materac
+destiny: Dla kota
 title: Materace
 description: TreeHouse to miejsce, w którym znajdziesz wskazówki dotyczące domu i ogrodu. Zainspiruj się się pomysłami i znajdź produkty odpowiadające Twoim oczekiwaniom.
 h1: Materace

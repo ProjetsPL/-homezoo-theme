@@ -1,7 +1,13 @@
 {% assign product_type = include.product.properties.type %}
 {% assign product_size = include.product.properties.product_size%}
 {% assign product_color = include.product.properties.color %}
-{% assign product_destiny = include.product.properties.destiny %}
+{% assign product_destiny_array = include.product.properties.destiny %}
+{% assign product_destiny = "" %}
+
+{% for product_item in product_destiny_array %}
+    {% assign product_destiny = product_destiny | append: product_item | append: " " %}
+{% endfor %}
+
 {% assign product_properties = product_type | append: " " | append: product_destiny | append: " " | append: product_size | append: " " | append: product_color %}
 {% assign product_properties_array = product_properties | remove: "," | split: " " %}
 
