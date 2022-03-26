@@ -60,11 +60,10 @@ properties:
   case: Dermia - antyalergiczny, niepikowany
   bilateral: true
   handles: false
-  destiny:
-  - Dla psa
-  - Dla kota
 
 #new
 tags:
   - swieta
+  - pies
+  - kot
 ---

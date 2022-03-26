@@ -29,8 +29,5 @@ properties:
   product_size: duża
   type: biurkowa
   color: Antracyt
-  destiny:
-  - Dla psa
-  - Dla kota
 
 ---

@@ -9,7 +9,6 @@ page_name: Podwieszane
 product_context: Lampa Podwieszana
 property: properties.type
 property_value: podwieszana
-destiny: Dla psa
 title: Lampy Podwieszane
 description: TreeHouse to miejsce, w którym znajdziesz wskazówki dotyczące domu i ogrodu. Zainspiruj się się pomysłami i znajdź produkty odpowiadające Twoim oczekiwaniom.
 h1: Lampy Podwieszane

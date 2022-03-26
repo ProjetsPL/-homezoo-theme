@@ -57,13 +57,12 @@ properties:
   case: Antyalergiczny Tencel lub Silver Protect
   bilateral: true
   handles: true
-  destiny:
-  - Dla psa
 distinction: 'premium'
 
 #new
 tags:
   - wesele
   - swieta
+  - pies
 
 ---

@@ -9,7 +9,6 @@ page_name: Zewnętrzne
 product_context: Lampa zewnętrzna
 property: properties.type
 property_value: zewnętrzna
-destiny: Dla psa
 title: Lampy Zewnętrzne
 description: TreeHouse to miejsce, w którym znajdziesz wskazówki dotyczące domu i ogrodu. Zainspiruj się się pomysłami i znajdź produkty odpowiadające Twoim oczekiwaniom.
 h1: Lampy Zewnętrzne
