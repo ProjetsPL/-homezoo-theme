@@ -50,6 +50,7 @@ links:
 properties:
   type: podwieszana
   product_size: 90x200
+  destiny: Dla psa
   brand: Janpol
   hardness: średni
   height: ok. 18 cm
