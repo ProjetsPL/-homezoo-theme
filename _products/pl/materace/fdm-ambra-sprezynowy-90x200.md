@@ -49,5 +49,4 @@ distinction: 'premium'
 
 #new
 tags:
-- kot
 ---

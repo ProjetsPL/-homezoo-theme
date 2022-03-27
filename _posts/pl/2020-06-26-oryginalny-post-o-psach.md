@@ -14,7 +14,7 @@ main_keywords:
 toc: true
 promoted: true
 update_date: 2020-06-26
-title: Nowoczesny Przedpokój - 4 Ciekawe Aranżacje Ściany w Przedpokoju
+title: Oryginalny post o psach
 description: "Zastanawiasz się jak urządzić nowoczesny przedpokój w domu? \U0001F3E0
   To spore wyzwanie. ➡️ Sprawdź najciekawsze propozycje i zainspiruj się."
 intro: Zależy Ci, aby urządzić nowoczesny przedpokój? Niezależnie od tego, czy dysponujesz
@@ -23,11 +23,13 @@ intro: Zależy Ci, aby urządzić nowoczesny przedpokój? Niezależnie od tego, 
   urządzone, ale także funkcjonalne. Znajdź swój pomysł na przedpokój - skorzystaj
   z naszych wskazówek, które ułatwią Ci to zadanie.
 image: "/uploads/nowoczesny-przedpokoj.jpg"
-related_products: []
+use_related_products: false
+related_products:
 belongs_to_hub: false
-products_quantity:
-products_category: []
-products_tags: []
+products_quantity: 4
+products_category:
+products_tags: 
+- pies
 property:
 property_value:
 

@@ -61,7 +61,7 @@
                           <!-- Po przefiltrowaniu tagów:  {{products_collection.size}}<br> -->
                         {% endif %}
 
-                        {% assign random_products = products_collection | where: "category", page.products_category | where: page.property , page.property_value %}
+                        {% assign random_products = products_collection | where: "category", page.products_category | where: page.property , page.property_value | sample: 30  %}
                         <div class="beam-item index-products">
                             <div class="flex-wrapper">
                               <ul class="flex-container">

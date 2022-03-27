@@ -66,4 +66,7 @@ properties:
   bilateral: true
   handles: true
 distinction: 'our_choice'
+#new
+tags:
+  - swieta
 ---

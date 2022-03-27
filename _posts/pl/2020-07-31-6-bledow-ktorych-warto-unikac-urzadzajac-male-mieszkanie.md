@@ -29,6 +29,7 @@ categories: "balkony"
 products_quantity: 10
 products_category:
 products_tags: 
+- wesele
 property:
 property_value: 
 

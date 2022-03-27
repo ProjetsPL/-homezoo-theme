@@ -18,7 +18,7 @@ segmenting_tags:
 toc: true
 promoted: true
 update_date: 2020-07-03
-title: Oryginalne Oświetlenie Salonu. 9 Pomysłów na Lampy do Salonu
+title: Oryginalne post o kotach
 description: "Poszukujesz oryginalnej lampy do salonu? \U0001F4A1 Sprawdź modele,
   które rządzą tym sezonem. ➡️ Postaw na nietypowe oświetlenie w salonie."
 intro: Salon to wyjątkowe miejsce w domu, gdzie niemal każdy spędza większą część
@@ -31,9 +31,10 @@ related_products: []
 
 belongs_to_hub: false
 
-products_quantity: 12
+products_quantity: 2
 products_category:
 products_tags: 
+- kot
 property: properties.size
 property_value: 90x200
 

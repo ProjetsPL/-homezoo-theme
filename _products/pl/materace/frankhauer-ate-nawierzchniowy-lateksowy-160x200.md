@@ -65,5 +65,7 @@ properties:
   case: Antyalergiczny
   bilateral: false
   handles: false
-
+#new
+tags:
+  - swieta
 ---

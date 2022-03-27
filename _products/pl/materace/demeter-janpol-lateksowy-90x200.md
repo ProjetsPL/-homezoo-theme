@@ -63,6 +63,5 @@ distinction: 'premium'
 tags:
   - wesele
   - swieta
-  - pies
 
 ---

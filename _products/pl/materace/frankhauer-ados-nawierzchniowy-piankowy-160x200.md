@@ -64,6 +64,4 @@ properties:
 #new
 tags:
   - swieta
-  - pies
-  - kot
 ---
