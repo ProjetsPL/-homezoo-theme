@@ -22,7 +22,9 @@ description: test
 intro: test
 image: "/uploads/bulterier-charakterystyka-rasy.jpg"
 use_related_products: false
-related_products: []
+related_products: 
+- _products/pl/zabawki-dla-psa/dz010404006-v01.md
+- _products/pl/zabawki-dla-psa/dz010404005-v01.md
 products_tags:
 - pies
 products_category: []
