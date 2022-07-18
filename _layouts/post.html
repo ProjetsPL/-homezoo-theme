@@ -206,7 +206,7 @@
             <div class="flex-container">
               {% for item in mixed_products_collection %}
                 <div class="flex-item" >
-                  {% include parts/product-listing-boxitem-sm.html product=item %}
+                  {% include parts/product-listing-boxitem-sm.html product=item productnumber=forloop.index %}
                 </div>
               {%endfor%}
             </div>
@@ -298,7 +298,7 @@
             {% for item in mixed_products_collection %}
                 <aside class="beam-rail-item  r-height-auto">
                     <div class="sticky-element">
-                        {% include parts/product-listing-boxitem-md.html product=item %}
+                        {% include parts/product-listing-boxitem-md.html product=item productnumber=forloop.index%}
                     </div>
                 </aside>
             {%endfor%}

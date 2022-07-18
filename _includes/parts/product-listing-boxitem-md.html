@@ -47,7 +47,6 @@
 <div class="product-link-wrapper">
 {%endif%}
 
-
     {% if include.product.distinction == 'our_choice'%}
     <div class="product-listing-boxitem-md label label-strong label-danger arrow-{{include.arrow}}">
     {% elsif include.product.distinction == 'budget'%}
@@ -60,26 +59,26 @@
     <div class="product-listing-boxitem-md arrow-{{include.arrow}}">
     {% endif %}
 
-        <div class="img-section">
+        <div class="img-section item-product-{{include.productnumber}}-img">
             <img class="img" src="{{include.product.photo}}" alt="{{ product_final_name }}">
         </div>
         <div class="desc-section">
             <header class="header">
                 {% if include.title_tag == "h1"%}
-                    <h1  class="title">{{ product_final_name }}</h1>
+                    <h1 class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</h1>
                 {% elsif include.title_tag == "h2"%}
-                    <h2  class="title">{{ product_final_name }}</h2>
+                    <h2  class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</h2>
                 {% elsif include.title_tag == "h3"%}
-                    <h3  class="title">{{ product_final_name }}</h3>
+                    <h3  class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</h3>
                 {% elsif include.title_tag == "h4"%}
-                    <h4  class="title">{{ product_final_name }}</h4>
+                    <h4  class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</h4>
                 {% elsif include.title_tag == "h5"%}
-                    <h5  class="title">{{ product_final_name }}</h5>
+                    <h5  class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</h5>
                 {%else%}
-                    <p  class="title">{{ product_final_name }}</p>
+                    <p  class="title item-product-{{include.productnumber}}-title">{{ product_final_name }}</p>
                 {% endif %}
 
-                <p class="subtitle">{{product_final_properties}}</p>
+                <p class="subtitle item-product-{{include.productnumber}}-subtitle">{{product_final_properties}}</p>
             </header>
             {% if page.layout == "products" %}
                 
@@ -92,7 +91,7 @@
             {% endif %}
             {% if include.product.links.size > 0 %}
                 <footer class="footer">
-                    <span class="btn btn-sm btn-cta">{{ include.product.links[0]['anchor'] }} {{ include.product.links['anchor'] }}</span>
+                    <span class="btn btn-sm btn-cta item-product-{{include.productnumber}}-cta">{{ include.product.links[0]['anchor'] }} {{ include.product.links['anchor'] }}</span>
                     <!-- <span class="info info-success">Oszczędzasz 15%</span> -->
                 </footer>
             {% endif %}
