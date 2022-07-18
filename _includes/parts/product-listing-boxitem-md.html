@@ -87,7 +87,7 @@
             {% elsif page.layout == "products-subcategory"%}       
             
             {%else%}
-            <p class="content">{{ include.product.description | truncate: 120 }}</p>
+            <p class="content item-product-{{include.productnumber}}-desc">{{ include.product.description | truncate: 120 }}</p>
             {% endif %}
             {% if include.product.links.size > 0 %}
                 <footer class="footer">
