@@ -19,6 +19,16 @@ async function generateProducts(
     }
   }
 
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
   function updateElements(class_el, data) {
     const elements = document.querySelectorAll(
       `.${class_el}`
@@ -74,12 +84,14 @@ async function generateProducts(
     })
   );
 
-  const data = [];
+  let data = [];
   all_data.forEach(function (item) {
     item.forEach((e) => data.push(e));
   });
   if (data.length === 0) return;
   let data_index = 0;
+  data = shuffleArray(data);
+
   const classes = [];
   const elements = document.querySelectorAll(
     'a[class*="item-product-"]'
