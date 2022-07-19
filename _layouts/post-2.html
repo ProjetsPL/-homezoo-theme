@@ -63,7 +63,7 @@
           </header>
 
           <!-- goad -->
-
+          {% if page.use_related_products %}
           <div class="flex-wrapper  nowrap">
             <div class="flex-container">
               {% for i in (1..page.products_quantity)  %}
@@ -73,6 +73,7 @@
               {%endfor%}
             </div>
           </div>
+          {% endif %}
 
           {{ content | inject_anchors | inject_ads }}
 
@@ -157,13 +158,15 @@
                 </div>
             </div>
 
+            {% if page.use_related_products %}
             {% for i in (1..page.products_quantity)  %}
                 <aside class="beam-rail-item  r-height-auto">
                     <div class="sticky-element">
                         {% include parts/product-listing-boxitem-md-2.html productnumber=forloop.index%}
                     </div>
                 </aside>
-            {%endfor%}
+            {% endfor %}
+            {% endif %}
 
         </div>
       </article>
