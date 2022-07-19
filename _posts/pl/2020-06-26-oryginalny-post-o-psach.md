@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-2
 date: 2020-06-26
 main_keywords:
 - pomysł na przedpokój
@@ -23,15 +23,13 @@ intro: Zależy Ci, aby urządzić nowoczesny przedpokój? Niezależnie od tego, 
   urządzone, ale także funkcjonalne. Znajdź swój pomysł na przedpokój - skorzystaj
   z naszych wskazówek, które ułatwią Ci to zadanie.
 image: "/uploads/nowoczesny-przedpokoj.jpg"
-use_related_products: false
-related_products:
 belongs_to_hub: false
-products_quantity: 4
-products_category:
-products_tags: 
-- pies
-property:
-property_value:
+
+use_related_products: true
+shop_id: 6
+categories_ids:
+- 428
+products_quantity: 5
 
 
 ---
