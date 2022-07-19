@@ -90,8 +90,8 @@
             <p class="content item-product-{{include.productnumber}}-desc">{{ include.product.description | truncate: 120 }}</p>
             {% endif %}
             {% if include.product.links.size > 0 %}
-                <footer class="footer">
-                    <span class="btn btn-sm btn-cta item-product-{{include.productnumber}}-cta">{{ include.product.links[0]['anchor'] }} {{ include.product.links['anchor'] }}</span>
+                <footer class="footer item-product-{{include.productnumber}}-cta">
+                    <span class="btn btn-sm btn-cta">{{ include.product.links[0]['anchor'] }} {{ include.product.links['anchor'] }}</span>
                     <!-- <span class="info info-success">Oszczędzasz 15%</span> -->
                 </footer>
             {% endif %}
